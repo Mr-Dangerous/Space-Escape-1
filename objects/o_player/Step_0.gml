@@ -66,6 +66,8 @@ switch (state){
 	xspeed = 0;
 	yspeed = 0;
 	sprite_index = s_player_attack
+	if (attack) {
+		
 	if (attack_release){
 		image_index = 1
 		attack_count += 1
