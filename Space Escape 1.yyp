@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "41f92f71-885d-4769-98b2-f3659ca666fe",
+            "Value": {
+                "id": "21904fa0-398e-4951-a3c0-4fdff772a2c4",
+                "resourcePath": "objects\\o_UI\\o_UI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4cbc4c58-68ba-45fd-98d0-009c94518618",
             "Value": {
                 "id": "3c27f174-0c36-45e7-8d78-37b39d7b2edd",
@@ -308,6 +316,14 @@
                 "id": "c07662a9-6bbd-4081-8497-adbc316ad8dd",
                 "resourcePath": "sprites\\s_tiller\\s_tiller.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f1cdfa7c-d55f-4525-b09b-68faf920c87a",
+            "Value": {
+                "id": "8fb360e0-f071-4de7-904e-47a5eb3ee8d3",
+                "resourcePath": "objects\\o_interactable\\o_interactable.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -51,8 +51,8 @@ switch (state){
 	}
 	//Interacting
 	if (interact){
-		//TODO needs to become o_interactable!
-		if (place_meeting(x + (16 * image_xscale), y, o_beacon)){
+		
+		if (place_meeting(x + (16 * image_xscale), y, o_interactable)){
 			state = player.interacting;
 		}
 	}
