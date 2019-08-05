@@ -169,7 +169,7 @@
             "varType": 0
         },
         {
-            "id": "562e0c0c-6deb-4399-a96e-9ea129ce2425",
+            "id": "03936af0-5655-430d-9364-7ac8126278d0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -178,8 +178,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "120",
-            "varName": "speed_threshold",
+            "value": "10",
+            "varName": "attack_duration",
+            "varType": 1
+        },
+        {
+            "id": "c59550c3-1ba1-46ac-a020-ca426f868f27",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "attack_count",
             "varType": 1
         }
     ],

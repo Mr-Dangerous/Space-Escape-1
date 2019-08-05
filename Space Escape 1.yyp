@@ -287,6 +287,22 @@
             }
         },
         {
+            "Key": "e971ef6a-3bb2-4b4e-b569-811767fc4e47",
+            "Value": {
+                "id": "eed0b3b8-c169-4262-941f-81f3af646870",
+                "resourcePath": "sprites\\s_player_attack\\s_player_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "efaa9d26-bfd4-4e60-a5d6-bc56d45b6104",
+            "Value": {
+                "id": "ebcc4f74-4fb8-4d10-a7d4-a021c6536823",
+                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "efd59f1a-0b43-4df7-9a7f-ed834c4bc897",
             "Value": {
                 "id": "c07662a9-6bbd-4081-8497-adbc316ad8dd",

@@ -1,5 +1,7 @@
 enum player{
-	moving
+	moving,
+	attacking,
+	interacting
 }
 
 state = player.moving
