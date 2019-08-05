@@ -5,6 +5,7 @@ down = keyboard_check(ord("S"));
 left = keyboard_check(ord("A"));
 space = keyboard_check(vk_space);
 attack = keyboard_check_pressed(ord("E"));
+attack_release = keyboard_check_released(ord("E"));
 interact = keyboard_check(ord("Q"));
 
 
@@ -65,10 +66,16 @@ switch (state){
 	xspeed = 0;
 	yspeed = 0;
 	sprite_index = s_player_attack
-	attack_count += 1
-	if (attack_count == attack_duration){
-		attack_count = 0;
+	if (attack_release){
+		image_index = 1
+		attack_count += 1
+	}
+	if (attack_count !=0){
+		attack_count += 1
+	}
+	if (attack_count >= attack_duration){
 		state = player.moving;
+		attack_count = 0
 	}
 	break;	
 #endregion Interacting
