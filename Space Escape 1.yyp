@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "33376cbb-6d06-432d-bca7-fa0fc209fa60",
+            "Value": {
+                "id": "d7fdf274-7402-464a-93c4-57c9cbd6bbc3",
+                "resourcePath": "views\\33376cbb-6d06-432d-bca7-fa0fc209fa60.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3c2231d5-83e6-4f25-a758-a7a0a38e49b2",
             "Value": {
                 "id": "713a5f79-cfca-4e46-b3bf-b1fd18f875c6",
@@ -164,6 +172,14 @@
                 "id": "cb1e5a12-d27e-46f6-8062-42f6350e3784",
                 "resourcePath": "scripts\\draw_charge\\draw_charge.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6ff79156-ec8d-4c8b-a900-49bdb238aa42",
+            "Value": {
+                "id": "ef897b37-96e6-49eb-b8b1-0c5f8b18fea2",
+                "resourcePath": "sprites\\s_slasher_idle\\s_slasher_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -252,6 +268,14 @@
                 "id": "e1871985-a26b-49ea-8b45-67a83d710581",
                 "resourcePath": "scripts\\apply_friction\\apply_friction.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bc3eaea7-16c5-4ca9-9d2c-36a445b247a1",
+            "Value": {
+                "id": "a1a8ea77-f4aa-4bea-a680-c43983c49247",
+                "resourcePath": "views\\bc3eaea7-16c5-4ca9-9d2c-36a445b247a1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
