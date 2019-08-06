@@ -1,4 +1,6 @@
 #region Set up Controls
+var _player = layer_instance_get_instance(o_player)
+
 up = keyboard_check(ord("W"));
 right = keyboard_check(ord("D"));
 down = keyboard_check(ord("S"));
@@ -7,6 +9,7 @@ space = keyboard_check(vk_space);
 attack = keyboard_check_pressed(ord("E"));
 attack_release = keyboard_check_released(ord("E"));
 interact = keyboard_check(ord("Q"));
+
 
 
 #endregion
@@ -66,7 +69,21 @@ switch (state){
 	xspeed = 0;
 	yspeed = 0;
 	sprite_index = s_player_attack
+	if (right or left){
+		image_xscale = right - left
+	}
 	if (attack) {
+		charge += 1
+		if (charge > 10){
+			charge = 10
+		}
+		if (charge > 1){
+			repeat (charge){
+				draw_charge(_player.x, _player.y);
+			}
+		}
+		
+	}
 		
 	if (attack_release){
 		image_index = 1
@@ -78,6 +95,7 @@ switch (state){
 	if (attack_count >= attack_duration){
 		state = player.moving;
 		attack_count = 0
+		charge = 0
 	}
 	break;	
 #endregion Interacting

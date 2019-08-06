@@ -178,7 +178,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "6",
             "varName": "attack_duration",
             "varType": 1
         },
@@ -194,6 +194,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "attack_count",
+            "varType": 1
+        },
+        {
+            "id": "6e3ce29f-51ca-4014-a0e2-9845f313fd59",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "charge",
             "varType": 1
         }
     ],
