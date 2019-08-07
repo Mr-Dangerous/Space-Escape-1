@@ -60,13 +60,37 @@ var _local_alert = check_alert_range(alert_range);
 			chasing = "true";
 		}
 	}
-	//this section needs to be changed to a move towards the player function
-	var _direction = point_direction(x, y, _player.x, _player.y)
-	
-	
-	
+	find_path_to_player();
 	move(o_border);
-	
-	
-break;
+	var attack_mode_seed = irandom_range(1, 2)
+	var attack_mode = "melee"
+	if (attack_mode_seed = 2){
+		attack_mode = "ranged"
+	}
+	var _attack_check = check_for_attack(attack_range)
+	if (attack_mode = "melee" and _attack_check){
+		state = slasher.melee
+	}
+	if (attack_mode = "ranged" and _attack_check){
+		state = slasher.ranged
+	}
+	break;
+#region Melee
+case slasher.melee:
+//replace with actual function
+	find_path_to_player()
+	xspeed = xspeed* 3
+	yspeed = yspeed* 3
+	move(o_border)
+	break;
+#endregion
+#region Ranged
+case slasher.ranged:
+//replace with actual function
+	find_path_to_player()
+	xspeed = xspeed* 3
+	yspeed = yspeed* 3
+	move(o_border)
+	break;
+#endregion
 }

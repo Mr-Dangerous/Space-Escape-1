@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "120",
+            "value": "90",
             "varName": "alert_range",
             "varType": 1
         },
@@ -119,20 +119,6 @@
             "varType": 1
         },
         {
-            "id": "1fd8c008-ec8a-4d19-bf63-03d3e8d9a59a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "variable_name",
-            "varType": 0
-        },
-        {
             "id": "d3435a8f-1132-497f-91f8-4a8d46dcb014",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -145,6 +131,20 @@
             "value": "false",
             "varName": "chasing",
             "varType": 2
+        },
+        {
+            "id": "4c252017-f3b7-4795-ad31-eef3b9bc7e45",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "60",
+            "varName": "attack_range",
+            "varType": 1
         }
     ],
     "solid": false,
