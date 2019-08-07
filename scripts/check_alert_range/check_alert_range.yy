@@ -1,8 +1,8 @@
 {
-    "id": "72edcb6f-b7c8-491c-b0e4-b8ea0ce80bfc",
+    "id": "eeba2b69-77f4-4f7c-9506-ebaee3e75445",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "enemy_nearby",
+    "name": "check_alert_range",
     "IsCompatibility": false,
     "IsDnD": false
 }

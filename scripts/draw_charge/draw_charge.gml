@@ -4,7 +4,7 @@
 
 var _player_x = argument0
 var _player_y = argument1
-var _direction_seed = random_range(0, 24)
+var _direction_seed = irandom_range(0, 24)
 var _direction = _direction_seed * (360/24)
 
 var _x = lengthdir_x(40, _direction)
