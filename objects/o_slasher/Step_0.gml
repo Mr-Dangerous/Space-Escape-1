@@ -53,10 +53,6 @@ case slasher.alert:
 
 show_debug_message("Slasher.alert");
 var _local_alert = check_alert_range(alert_range);
-show_debug_message("_local_alert =");
-show_debug_message(_local_alert)
-show_debug_message("Chasing = ")
-show_debug_message(chasing);
 	if(_local_alert == false){
 		if(chasing == "false"){
 			alarm_set(1, 300);
@@ -65,7 +61,9 @@ show_debug_message(chasing);
 		}
 	}
 	//this section needs to be changed to a move towards the player function
-	yspeed = -.1;
+	var _direction = point_direction(x, y, _player.x, _player.y)
+	
+	
 	
 	move(o_border);
 	
