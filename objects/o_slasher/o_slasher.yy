@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 2,
             "m_owner": "518a047f-e4ba-4c8c-9c55-24af2ca48814"
+        },
+        {
+            "id": "0041ef78-0edb-4026-b906-02116a696219",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "518a047f-e4ba-4c8c-9c55-24af2ca48814"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -62,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "300",
+            "value": "5",
             "varName": "alert_range",
             "varType": 1
         },
@@ -121,6 +131,20 @@
             "value": "0",
             "varName": "variable_name",
             "varType": 0
+        },
+        {
+            "id": "d3435a8f-1132-497f-91f8-4a8d46dcb014",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "false",
+            "varName": "chasing",
+            "varType": 2
         }
     ],
     "solid": false,

@@ -4,4 +4,4 @@ enum slasher {
 	moving,
 }
 
-state = slasher.idle
+state = slasher.idle;
