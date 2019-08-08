@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "e2a4c009-114b-46cb-972a-06e709fdc9dd",
+            "Value": {
+                "id": "da999089-07a5-46c1-9e7e-9ef48d16cedf",
+                "resourcePath": "sprites\\s_slasher_walking\\s_slasher_walking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e73d65f6-be66-4fc4-9eb8-c2022dee8186",
             "Value": {
                 "id": "1c647870-ca67-4e55-bdb7-7a8dbf000b99",
