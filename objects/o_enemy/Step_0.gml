@@ -10,8 +10,7 @@ var _random_2 = irandom_range (0, 400)
 
 	if (_random = 1){
 		state = enemy.moving
-		//To be overriden
-		sprite_index = s_slasher_walking
+		//add in idle_sprite
 		move_direction  = irandom_range(1, 4);
 		
 		alarm_set(0, irandom_range (20, 200));
@@ -44,7 +43,7 @@ case enemy.moving:
 	if (_alert){
 		show_debug_message("enemy.Moving");
 		state = enemy.alert;
-		sprite_index = s_slasher_walking;
+		//assign s_sprite_moving
 		xspeed = 0;
 		yspeed = 0;
 	}
@@ -66,11 +65,11 @@ show_debug_message("enemy.alert");
 	if (attack_mode = "melee" and _attack_check){
 		state = enemy.melee
 		pre_combat_processes()
-		sprite_index = s_slasher_melee_attack
+		//assign melee attack sprite here
 	}
 	if (attack_mode = "ranged" and _attack_check){
 		state = enemy.ranged
-		sprite_index = s_slasher_ranged_attack
+		//assign ranged attack sprite here
 	}
 	break;
 
@@ -96,4 +95,3 @@ case enemy.ranged:
 	break;
 #endregion
 }
-

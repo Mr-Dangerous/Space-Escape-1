@@ -1,0 +1,4 @@
+Todo list
+Create script that resolves combat, including knocking the sprite back
+create a slight jiggle or bounce when moving
+menus.  menus.  menus
