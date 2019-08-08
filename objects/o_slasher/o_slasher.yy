@@ -159,6 +159,48 @@
             "value": "0",
             "varName": "y_bounce_speed",
             "varType": 0
+        },
+        {
+            "id": "a526b59e-3a59-4592-836a-c907df112d69",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.1",
+            "varName": "_gravity",
+            "varType": 0
+        },
+        {
+            "id": "95019801-68bb-4ef2-8034-24102d45f5a9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.75",
+            "varName": "speed_multiplier",
+            "varType": 0
+        },
+        {
+            "id": "11ee1d71-5287-4543-88f5-6b4ee578327a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "alert",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -5,7 +5,7 @@ add_bounce_to_move()
 if (place_meeting(x + xspeed, y , collision_object)){
 	xspeed = 0;
 }
-if (place_meeting(x, y + yspeed, collision_object)){
+if (place_meeting(x, y + yspeed + y_bounce_speed, collision_object)){
 	yspeed = 0;
 }
 

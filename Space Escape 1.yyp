@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "cdcf8930-106e-4ea0-abbd-2f21a3972069",
+            "Value": {
+                "id": "3033db81-9f63-42d0-8829-7d047a8caa39",
+                "resourcePath": "scripts\\disengage_player\\disengage_player.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d89b2263-d2fd-45b2-bda9-dbb080d34121",
             "Value": {
                 "id": "c982ddb7-f89d-47fc-bba5-57c5cac3b1ec",
@@ -489,7 +497,8 @@
         "89996a4b-22a0-4bad-b453-d128206b0199",
         "63e51ce3-45db-4c1e-a6c2-2f8e3d13c478",
         "98963979-da91-4f7d-8a5b-b8d8dcacabd7",
-        "a0bfb105-be46-471c-ae94-b0cd979ece7c"
+        "a0bfb105-be46-471c-ae94-b0cd979ece7c",
+        "cdcf8930-106e-4ea0-abbd-2f21a3972069"
     ],
     "tutorial": ""
 }

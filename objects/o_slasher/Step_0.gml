@@ -5,8 +5,8 @@ var _alert = check_alert_range(alert_range)
 switch (state){
 #region Idle
 case slasher.idle:
-var _random = 1//irandom_range(0, 1000)
-var _random_2 = irandom_range (0, 1000)
+var _random = irandom_range(0, 1000)
+var _random_2 = irandom_range (0, 400)
 
 
 	if (_random = 1){
@@ -46,25 +46,18 @@ case slasher.moving:
 		state = slasher.alert;
 		sprite_index = s_slasher_walking;
 		xspeed = 0;
-		yspeed= 0;
+		yspeed = 0;
 	}
-	move_with_bounce(o_border);
+	move(o_border);
 	break;
 #endregion	
 case slasher.alert:
 
 show_debug_message("Slasher.alert");
-var _local_alert = check_alert_range(alert_range);
-	if(_local_alert == false){
-		if(chasing == "false"){
-			alarm_set(1, 300);
-			show_debug_message("Alarm set!");
-			chasing = "true";
-		}
-	}
+	disengage_player()
 	find_path_to_player();
 	move(o_border);
-	var attack_mode_seed = irandom_range(1, 2)
+	var attack_mode_seed = 1//irandom_range(1, 2)
 	var attack_mode = "melee"
 	if (attack_mode_seed = 2){
 		attack_mode = "ranged"
@@ -82,10 +75,14 @@ var _local_alert = check_alert_range(alert_range);
 #region Melee
 case slasher.melee:
 //replace with actual function
+	alert_range +=20
+	disengage_player()
 	find_path_to_player()
 	xspeed = xspeed* 3
 	yspeed = yspeed* 3
+	check_alert_range()
 	move(o_border)
+	alert_range -=20
 	break;
 #endregion
 #region Ranged
