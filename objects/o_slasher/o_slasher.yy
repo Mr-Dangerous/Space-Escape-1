@@ -145,6 +145,20 @@
             "value": "60",
             "varName": "attack_range",
             "varType": 1
+        },
+        {
+            "id": "cfcbf147-ed3d-4a9b-a8b4-32bebba280ad",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "y_bounce_speed",
+            "varType": 0
         }
     ],
     "solid": false,

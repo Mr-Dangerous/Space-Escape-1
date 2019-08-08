@@ -5,12 +5,13 @@ var _alert = check_alert_range(alert_range)
 switch (state){
 #region Idle
 case slasher.idle:
-var _random = irandom_range(0, 1000)
+var _random = 1//irandom_range(0, 1000)
 var _random_2 = irandom_range (0, 1000)
 
 
 	if (_random = 1){
 		state = slasher.moving
+		sprite_index = s_slasher_walking
 		move_direction  = irandom_range(1, 4);
 		
 		alarm_set(0, irandom_range (20, 200));
@@ -43,10 +44,11 @@ case slasher.moving:
 	if (_alert){
 		show_debug_message("Slasher.Moving");
 		state = slasher.alert;
+		sprite_index = s_slasher_walking;
 		xspeed = 0;
 		yspeed= 0;
 	}
-	move(o_border);
+	move_with_bounce(o_border);
 	break;
 #endregion	
 case slasher.alert:
@@ -70,9 +72,11 @@ var _local_alert = check_alert_range(alert_range);
 	var _attack_check = check_for_attack(attack_range)
 	if (attack_mode = "melee" and _attack_check){
 		state = slasher.melee
+		sprite_index = s_slasher_melee_attack
 	}
 	if (attack_mode = "ranged" and _attack_check){
 		state = slasher.ranged
+		sprite_index = s_slasher_ranged_attack
 	}
 	break;
 #region Melee
