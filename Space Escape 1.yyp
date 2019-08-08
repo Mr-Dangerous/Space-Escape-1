@@ -525,6 +525,14 @@
                 "resourcePath": "sprites\\s_player_idle\\s_player_idle.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "ff47ffb4-8df0-4951-98b3-d9a90c6e9409",
+            "Value": {
+                "id": "8a086ef2-431e-48a8-b026-fdf263e3f9ad",
+                "resourcePath": "sprites\\s_player_2_idle\\s_player_2_idle.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
