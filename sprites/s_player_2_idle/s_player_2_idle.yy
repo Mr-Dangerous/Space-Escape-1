@@ -9,7 +9,7 @@
     "bbox_bottom": 31,
     "bbox_left": 7,
     "bbox_right": 20,
-    "bbox_top": 0,
+    "bbox_top": 1,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -65,7 +65,7 @@
             "isLocked": false,
             "name": "helmet",
             "opacity": 100,
-            "visible": true
+            "visible": false
         },
         {
             "id": "c15f3db3-370b-4952-b97c-2c57cdd24ec8",
