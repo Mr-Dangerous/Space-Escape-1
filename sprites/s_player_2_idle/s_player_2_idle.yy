@@ -7,9 +7,9 @@
     "HTile": false,
     "VTile": false,
     "bbox_bottom": 31,
-    "bbox_left": 7,
-    "bbox_right": 20,
-    "bbox_top": 1,
+    "bbox_left": 5,
+    "bbox_right": 22,
+    "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -65,7 +65,7 @@
             "isLocked": false,
             "name": "helmet",
             "opacity": 100,
-            "visible": false
+            "visible": true
         },
         {
             "id": "c15f3db3-370b-4952-b97c-2c57cdd24ec8",

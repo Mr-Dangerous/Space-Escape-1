@@ -274,7 +274,7 @@
             "Key": "895f81ab-9583-426c-b61c-f5ebba203aa6",
             "Value": {
                 "id": "fb7c892e-550f-4f0a-8e68-0969df20174b",
-                "resourcePath": "scripts\\pre_combat_processes\\pre_combat_processes.yy",
+                "resourcePath": "scripts\\select_attack_mode\\select_attack_mode.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "f9c0bbb1-45a3-4a75-9cf4-4366eb00c201",
+            "Value": {
+                "id": "cda2d48e-f3a1-49ea-92b4-d3a60446fee0",
+                "resourcePath": "scripts\\find_path_to_point\\find_path_to_point.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fa2a2c46-0358-4981-998b-b86eaa232e7b",
             "Value": {
                 "id": "9a6a2ac8-3c96-4ef1-92c8-b06a5eeaf74d",
@@ -543,6 +551,7 @@
         "eeba2b69-77f4-4f7c-9506-ebaee3e75445",
         "2e50835e-0057-4157-9af8-f23e59899f77",
         "89996a4b-22a0-4bad-b453-d128206b0199",
+        "f9c0bbb1-45a3-4a75-9cf4-4366eb00c201",
         "63e51ce3-45db-4c1e-a6c2-2f8e3d13c478",
         "98963979-da91-4f7d-8a5b-b8d8dcacabd7",
         "a0bfb105-be46-471c-ae94-b0cd979ece7c",

@@ -2,8 +2,10 @@ enum enemy {
 	idle,
 	alert,
 	moving,
+	combat,
 	melee,
-	ranged
+	ranged, 
+	inert
 }
 
 state = enemy.idle;

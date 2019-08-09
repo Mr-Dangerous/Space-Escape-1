@@ -1,3 +1,4 @@
+//needs to be checked
 var alert = check_alert_range(alert_range);
 	if(alert == false){
 		if(chasing == "false"){

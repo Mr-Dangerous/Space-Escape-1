@@ -43,6 +43,26 @@
             "enumb": 1,
             "eventtype": 2,
             "m_owner": "518a047f-e4ba-4c8c-9c55-24af2ca48814"
+        },
+        {
+            "id": "7a3ed591-4e4a-44af-a375-d75b2c814e9b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 2,
+            "m_owner": "518a047f-e4ba-4c8c-9c55-24af2ca48814"
+        },
+        {
+            "id": "4d3320a3-68d6-4c10-a1c0-7056bd6dc806",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 3,
+            "eventtype": 2,
+            "m_owner": "518a047f-e4ba-4c8c-9c55-24af2ca48814"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -214,7 +234,7 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "target_x",
-            "varType": 0
+            "varType": 1
         },
         {
             "id": "b8e59353-c17b-4c4e-b064-8549b8a1dc41",
@@ -228,7 +248,7 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "target_y",
-            "varType": 0
+            "varType": 1
         },
         {
             "id": "d267bb98-70b7-4580-b25d-5c6c5bb285e7",
@@ -243,6 +263,20 @@
             "value": "instance_find(o_player, 0);",
             "varName": "_player",
             "varType": 4
+        },
+        {
+            "id": "f6c46cb5-abc7-4e21-a07e-9480173ea200",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "none",
+            "varName": "selected_attack_mode",
+            "varType": 2
         },
         {
             "id": "7bc05374-33ff-4399-9f4e-42374ca72a1e",
@@ -299,6 +333,20 @@
             "value": "none",
             "varName": "attack_mode_4",
             "varType": 2
+        },
+        {
+            "id": "9543308a-4aa5-4f9e-afaf-46dea3771a98",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "resume_aggro",
+            "varType": 0
         }
     ],
     "solid": false,
