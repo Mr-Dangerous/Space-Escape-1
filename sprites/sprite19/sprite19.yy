@@ -2,7 +2,7 @@
     "id": "1462088a-b209-4758-bbaa-1070d247ccb7",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_flower_tile_purple",
+    "name": "sprite19",
     "For3D": false,
     "HTile": false,
     "VTile": false,
