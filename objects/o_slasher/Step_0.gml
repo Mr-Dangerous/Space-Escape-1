@@ -80,7 +80,7 @@ debug_message = "alert"
 #region Combat
 case enemy.combat:
 debug_message = "combat"
-	instance_create_layer(_player.x, _player.y, "Instances", o_player_location)
+	var _player_location = instance_create_layer(_player.x, _player.y, "Instances", o_player_location)
 	xspeed = 0
 	yspeed = 0
 	//assign sprites by attack
@@ -123,10 +123,11 @@ debug_message = "melee"
 		image_speed = 2
 		xspeed = 0
 		yspeed = 0
-		if (!alarm[1]){
-			image_speed = 0
-			alarm_set(1, resume_aggro + random_range(2, 10))
-		}
+		state = enemy.idle
+		//if (!alarm[1]){
+		//	image_speed = 0
+		//	alarm_set(1, resume_aggro + random_range(2, 10))
+		//}
 	}
 	move(o_border);
 	break;

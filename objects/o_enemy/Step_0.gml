@@ -93,7 +93,7 @@ case enemy.melee:
 	find_path_to_point()
 	xspeed = xspeed * 3;
 	yspeed = yspeed * 3;
-	if (x == target_x and y == target_y){
+	if (x + image_xscale == target_x and y == target_y){
 		image_speed = 2
 		if (!alarm[1] and image_number == 0){
 			alarm_set(1, resume_aggro + random_range(2, 10))

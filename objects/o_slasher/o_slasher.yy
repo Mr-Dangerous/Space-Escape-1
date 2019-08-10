@@ -43,7 +43,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "4935d6c9-e37a-4577-8696-1b5f6b2cd850",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_player_location_object",
+            "varType": 4
+        }
+    ],
     "solid": false,
     "spriteId": "6ff79156-ec8d-4c8b-a900-49bdb238aa42",
     "visible": true
