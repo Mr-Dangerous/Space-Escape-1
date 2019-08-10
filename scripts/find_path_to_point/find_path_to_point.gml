@@ -35,6 +35,5 @@ switch (_direction){
 }
 	xspeed = xspeed * speed_multiplier
 	yspeed = yspeed * speed_multiplier / 2
-	face_player()
-	//needs a function to zero in ont he target
+
 

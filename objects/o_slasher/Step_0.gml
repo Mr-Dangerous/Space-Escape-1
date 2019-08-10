@@ -71,9 +71,6 @@ debug_message = "alert"
 	//attack mode as well as the starting sprite will be here.
 	var _attack_check = check_for_attack(attack_range)
 	if (_attack_check){
-		//Acquire target
-		target_x = _player.x;
-		target_y = _player.y;
 		state = enemy.combat;
 		select_attack_mode();
 	}
@@ -83,7 +80,7 @@ debug_message = "alert"
 #region Combat
 case enemy.combat:
 debug_message = "combat"
-
+	instance_create_layer(_player.x, _player.y, "Instances", o_player_location)
 	xspeed = 0
 	yspeed = 0
 	//assign sprites by attack
@@ -100,10 +97,6 @@ debug_message = "combat"
 	} else {
 		state = enemy.idle;
 	}
-	//creates a delay in the attack animation
-	if (!alarm[3]){
-		alarm_set(3, irandom_range(3, 5));
-	}
 		
 	break;
 #endregion
@@ -113,12 +106,25 @@ case enemy.melee:
 debug_message = "melee"
 	find_path_to_point()
 	
-	xspeed = (xspeed) * 3;
-	yspeed = (yspeed) * 3;
+	xspeed = (xspeed);
+	yspeed = (yspeed);
 	
-	if (x == target_x and y == target_y){
+	//var _difference_x = abs(x - target_x)
+	//var _difference_y = abs(y - target_y)
+	
+	//if (_difference_x < 4){
+	//	x = target_x
+	//}
+	//if (_difference_y < 4){
+	//	y = target_y
+	//}
+	if (place_meeting(x + image_xscale, y, o_player_location)){
+		show_debug_message("true")
 		image_speed = 2
-		if (!alarm[1] and image_number == 0){
+		xspeed = 0
+		yspeed = 0
+		if (!alarm[1]){
+			image_speed = 0
 			alarm_set(1, resume_aggro + random_range(2, 10))
 		}
 	}
