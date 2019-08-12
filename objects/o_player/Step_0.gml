@@ -1,5 +1,9 @@
 #region Set up Controls
 var _player = layer_instance_get_instance(o_player)
+var map = instance_find(o_map, 0)
+
+
+
 
 up = keyboard_check(ord("W"));
 right = keyboard_check(ord("D"));
@@ -8,7 +12,7 @@ left = keyboard_check(ord("A"));
 space = keyboard_check(vk_space);
 attack = keyboard_check_pressed(ord("E"));
 attack_release = keyboard_check_released(ord("E"));
-interact = keyboard_check(ord("Q"));
+interact = keyboard_check_pressed(ord("Q"));
 
 
 
@@ -59,8 +63,32 @@ switch (state){
 		if (place_meeting(x + (16 * image_xscale), y, o_interactable)){
 			state = player.interacting;
 		}
-	}
-		
+	//check to see if it can be tilled
+		var i = floor((x + (20 * image_xscale)) / 16);
+		var j = floor((y + 16)/ 16);
+		var _tile = ds_grid_get(map._testroom, i, j)
+		var tile_farmable = false
+		if (_tile = "grass" or
+			_tile = "flower" or
+			_tile = "tilled"){
+			tile_farmable = true
+			}
+		if (tile_farmable){	
+			switch (_tile){
+				case "tilled":
+				ds_grid_set(map._testroom, i, j, "grass");
+				break;
+	
+				case "grass":
+				ds_grid_set(map._testroom, i, j, "tilled");
+				break;
+				
+				case "flower":
+				ds_grid_set(map._testroom, i, j, "tilled");
+				break;
+			}
+		}
+	}	
 	break;
 	
 #endregion
