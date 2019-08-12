@@ -1,6 +1,7 @@
 #region Set up Controls
 var _player = layer_instance_get_instance(o_player)
 var map = instance_find(o_map, 0)
+var _map = o_map._map
 
 
 
@@ -66,7 +67,7 @@ switch (state){
 	//check to see if it can be tilled
 		var i = floor((x + (20 * image_xscale)) / 16);
 		var j = floor((y + 16)/ 16);
-		var _tile = ds_grid_get(map._testroom, i, j)
+		var _tile = ds_grid_get(_map, i, j)
 		var tile_farmable = false
 		if (_tile = "grass" or
 			_tile = "flower" or
@@ -76,15 +77,15 @@ switch (state){
 		if (tile_farmable){	
 			switch (_tile){
 				case "tilled":
-				ds_grid_set(map._testroom, i, j, "grass");
+				ds_grid_set(_map, i, j, "grass");
 				break;
 	
 				case "grass":
-				ds_grid_set(map._testroom, i, j, "tilled");
+				ds_grid_set(_map, i, j, "tilled");
 				break;
 				
 				case "flower":
-				ds_grid_set(map._testroom, i, j, "tilled");
+				ds_grid_set(_map, i, j, "tilled");
 				break;
 			}
 		}

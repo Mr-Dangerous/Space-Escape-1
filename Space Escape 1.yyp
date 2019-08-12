@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "ed3cb94c-f8ac-4d15-828c-17916b16ea82",
+            "Value": {
+                "id": "7e5ba350-09f1-4cdd-b007-3e5320fdea04",
+                "resourcePath": "sprites\\s_broadleaf_tree\\s_broadleaf_tree.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "eeba2b69-77f4-4f7c-9506-ebaee3e75445",
             "Value": {
                 "id": "da0f4bfc-cd5d-46e8-b215-c1a91d699e1f",

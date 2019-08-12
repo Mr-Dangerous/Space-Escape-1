@@ -1,4 +1,6 @@
+//this object will render and draw the map of background tiles.
 var _current_room = room
+var tile_width = 16
 if (_current_room == r_test_room){
 	//first you set the room dimensions and the associated grid
 	_map_height = 40
@@ -33,8 +35,22 @@ if (_current_room == r_test_room_farm){
 		}
 	}
 	add_tile_feature(0, _map, 4, 4)
-	show_debug_message("fire")
 }
+
+
+//place impassable terrain
+for (var _xp = 0; _xp < _map_width; _xp++){
+	for (var _yp = 0; _yp < _map_height; _yp++){
+		if (ds_grid_get(_map, _xp, _yp) = "water"){
+			show_debug_message("made a border")
+			instance_create_layer(_xp*tile_width, _yp*tile_width, "Instances", o_border)
+		}
+	}
+}
+	
+
+
+
 
 
 

@@ -12,12 +12,11 @@ var _x = argument2
 var _y = argument3
 
 
-show_debug_message("before")
 
 switch (seed){
 	#region 2x2 pool with surrounding flowers, seed = 0
 	case 0:
-	show_debug_message("after")
+
 		//A 4x4 block with a pool in the center
 		
 		var i = 1
