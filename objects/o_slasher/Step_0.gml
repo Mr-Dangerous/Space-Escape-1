@@ -54,7 +54,7 @@ debug_message = "moving"
 		xspeed = 0;
 		yspeed = 0;
 	}
-	move(o_border);
+	move(o_border, o_difficult_terrain);
 	break;
 	
 #endregion	
@@ -65,7 +65,7 @@ debug_message = "alert"
 
 	disengage_player();
 	find_path_to_player();
-	move(o_border);
+	move(o_border, o_difficult_terrain);
 	//This section will have 4 attack modes.  
 	//All of the code for determening
 	//attack mode as well as the starting sprite will be here.
@@ -129,7 +129,7 @@ debug_message = "melee"
 		//	alarm_set(1, resume_aggro + random_range(2, 10))
 		//}
 	}
-	move(o_border);
+	move(o_border, o_difficult_terrain);
 	break;
 	
 #endregion
@@ -141,7 +141,7 @@ case enemy.ranged:
 	find_path_to_player()
 	xspeed = xspeed* 3
 	yspeed = yspeed* 3
-	move(o_border)
+	move(o_border, o_difficult_terrain)
 	break;
 #endregion
 

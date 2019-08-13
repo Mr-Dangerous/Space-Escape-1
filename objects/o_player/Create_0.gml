@@ -5,3 +5,4 @@ enum player{
 }
 
 state = player.moving
+

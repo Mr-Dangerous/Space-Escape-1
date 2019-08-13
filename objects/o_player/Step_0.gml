@@ -1,3 +1,9 @@
+#region Fetch the map
+_map_object = instance_find(o_map, 0);
+_map = _map_object._map;
+_terrain_map = _map_object._terrain_map;
+#endregion
+
 #region Set up Controls
 up = keyboard_check(ord("W"));
 right = keyboard_check(ord("D"));
@@ -39,7 +45,7 @@ switch (state){
 	
 	
 	//commit to the move
-	move(o_border);
+	move(o_border, o_difficult_terrain);
 	
 	//processes after the move
 	if (abs(yspeed) > max_y_speed){

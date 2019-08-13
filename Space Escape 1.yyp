@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "54149712-d2ac-41a3-a025-25fe2aff9a93",
+            "Value": {
+                "id": "d37a7aa1-4431-47d1-9e32-02f5bc50a341",
+                "resourcePath": "sprites\\s_brambles\\s_brambles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59c4d7d1-260b-4ba4-bd58-9958e774eb82",
             "Value": {
                 "id": "34fb2388-f8f1-44b5-8ec7-030ee190352a",
@@ -391,6 +399,14 @@
             }
         },
         {
+            "Key": "9c034c4b-b558-4db2-b5a3-a141f3e5c741",
+            "Value": {
+                "id": "030950a8-e8e4-448a-963e-3efb198ac34b",
+                "resourcePath": "objects\\o_difficult_terrain\\o_difficult_terrain.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9d7388d8-e18e-4ed9-87c2-ea562794cd2e",
             "Value": {
                 "id": "a7351257-1294-4539-a01a-bbf3565c772c",
@@ -516,6 +532,14 @@
                 "id": "da999089-07a5-46c1-9e7e-9ef48d16cedf",
                 "resourcePath": "sprites\\s_slasher_walking\\s_slasher_walking.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e3fa1bd4-745b-4011-8d64-b625394df51a",
+            "Value": {
+                "id": "3643f063-69d1-4705-962b-22210118e4ba",
+                "resourcePath": "objects\\o_brambles\\o_brambles.yy",
+                "resourceType": "GMObject"
             }
         },
         {
