@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "845b5e06-0a23-4fb7-bd2e-dcfda12a18bd",
+            "Value": {
+                "id": "983253b6-b748-41a3-babe-1f4dd52f041d",
+                "resourcePath": "objects\\o_broadleaf_tree\\o_broadleaf_tree.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "895f81ab-9583-426c-b61c-f5ebba203aa6",
             "Value": {
                 "id": "fb7c892e-550f-4f0a-8e68-0969df20174b",

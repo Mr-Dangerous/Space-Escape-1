@@ -1,4 +1,4 @@
-tile_width = 16
+
 for (xp = 0; xp < _map_width; xp++){
 	for (yp = 0; yp < _map_height; yp++){
 		_tile = ds_grid_get(_map, xp, yp)

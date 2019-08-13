@@ -1,7 +1,7 @@
 #region Set up Controls
 var _player = layer_instance_get_instance(o_player)
-var map = instance_find(o_map, 0)
-var _map = o_map._map
+//var map = instance_find(o_map, 0)
+//var _map = o_map._map
 
 
 
