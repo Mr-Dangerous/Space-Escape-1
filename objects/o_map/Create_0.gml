@@ -50,6 +50,7 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 				var _tree = instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_broadleaf_tree)
 				_tree.depth = -_yp
 				ds_grid_set(_terrain_map, _xp, _yp, "broadleaf tree")
+				instance_create_layer(_xp*tile_width, _yp*tile_width, "Instances", o_broadleaf_stump)
 			}
 			if (_random == 2 or _random == 3){
 				instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_brambles)
@@ -67,7 +68,7 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 		if (ds_grid_get(_map, _xp, _yp) = "water"){
 			show_debug_message("made a border")
 			instance_create_layer(_xp*tile_width, _yp*tile_width, "Instances", o_border)
-		}
+		}	
 	}
 }
 	

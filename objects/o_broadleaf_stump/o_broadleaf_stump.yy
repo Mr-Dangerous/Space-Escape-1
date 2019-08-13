@@ -1,14 +1,14 @@
 {
-    "id": "845b5e06-0a23-4fb7-bd2e-dcfda12a18bd",
+    "id": "cbd502c8-a35f-46fc-8dbe-8adcbbc1a687",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_broadleaf_tree",
+    "name": "o_broadleaf_stump",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "b41219fb-382f-440b-9a63-039e268872a9",
+    "parentObjectId": "175779d6-a5c2-4061-bdee-c6c950b816e1",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "ed3cb94c-f8ac-4d15-828c-17916b16ea82",
+    "spriteId": "a53ab814-db7d-4bf1-8a43-2f47e1be08d1",
     "visible": true
 }

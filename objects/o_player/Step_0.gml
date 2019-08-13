@@ -58,6 +58,7 @@ switch (state){
 	if (attack){
 		state = player.attacking
 	}
+	//turn blocking items transparent
 	//Interacting
 	if (interact){
 		

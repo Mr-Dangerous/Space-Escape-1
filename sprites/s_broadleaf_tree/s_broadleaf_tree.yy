@@ -6,10 +6,10 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 89,
-    "bbox_left": 25,
-    "bbox_right": 38,
-    "bbox_top": 76,
+    "bbox_bottom": 70,
+    "bbox_left": 8,
+    "bbox_right": 55,
+    "bbox_top": 7,
     "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
@@ -72,7 +72,7 @@
             "isLocked": false,
             "name": "bounding box",
             "opacity": 100,
-            "visible": true
+            "visible": false
         },
         {
             "id": "a3d5fb1c-218b-4ede-9638-248829cf405a",
