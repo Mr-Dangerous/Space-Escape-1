@@ -1,11 +1,4 @@
 #region Set up Controls
-var _player = layer_instance_get_instance(o_player)
-//var map = instance_find(o_map, 0)
-//var _map = o_map._map
-
-
-
-
 up = keyboard_check(ord("W"));
 right = keyboard_check(ord("D"));
 down = keyboard_check(ord("S"));
@@ -128,7 +121,7 @@ switch (state){
 	}
 	break;	
 #endregion Interacting
-//just a test for now
+//just for now
 	case player.interacting:
 	xspeed = 0;
 	yspeed = 0;
