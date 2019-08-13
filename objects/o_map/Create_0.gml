@@ -55,7 +55,10 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 			if (_random == 2 or _random == 3){
 				instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_brambles)
 				ds_grid_set(_terrain_map, _xp, _yp, "brambles")
-				
+			}
+			if (_random == 5){
+				instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_bramble_with_dead_tree)
+				ds_grid_set(_terrain_map, _xp, _yp, "brambles with dead tree")
 			}
 		}
 	}

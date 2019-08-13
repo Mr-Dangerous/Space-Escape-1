@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "8fc0c80f-fd7f-459b-bace-82c5bf9098ff",
+            "Value": {
+                "id": "a6618a1f-0fb3-4c1a-bb87-eea6e0b1bad6",
+                "resourcePath": "sprites\\s_bramble_dead_tree\\s_bramble_dead_tree.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9322f33d-292c-4a23-a09c-0f77bfda5847",
             "Value": {
                 "id": "80383539-cc6b-4c8d-b303-0ede05f6d109",
@@ -572,6 +580,14 @@
                 "id": "17209cc7-7e48-4a3f-b2ec-374561aea425",
                 "resourcePath": "sprites\\s_water\\s_water.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e5452e03-a633-4517-ba52-17d778e378be",
+            "Value": {
+                "id": "4b8aee16-d1b1-42d8-9355-1854976326aa",
+                "resourcePath": "objects\\o_bramble_with_dead_tree\\o_bramble_with_dead_tree.yy",
+                "resourceType": "GMObject"
             }
         },
         {
