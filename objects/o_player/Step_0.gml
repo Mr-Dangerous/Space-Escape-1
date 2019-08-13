@@ -13,6 +13,8 @@ space = keyboard_check(vk_space);
 attack = keyboard_check_pressed(ord("E"));
 attack_release = keyboard_check_released(ord("E"));
 interact = keyboard_check_pressed(ord("Q"));
+build = keyboard_check_pressed(ord("R"));
+build_released = keyboard_check_released(ord("R"))
 
 
 
@@ -91,6 +93,24 @@ switch (state){
 			}
 		}
 	}	
+	if (build){
+		//needs tp be fixed
+		//I'm leaving this here until the next time I sit down to do this, but bah.
+		_snapped_x = floor(x/16)*16
+		_snapped_y = floor(y/16)*16
+		var _grid_builder = instance_create_layer(x, y, "Player", o_grid_builder)
+		if (image_xscale = 1){
+			_grid_builder.x = _snapped_x + 6
+		}
+		if (image_xscale = -1){
+			_grid_builder.x = floor((_snapped_x)/16)*16	
+		}
+		_grid_builder.y = floor((_snapped_y)/16)*16
+	}
+	if (build_released){
+		if (image_xscale = 1){
+		}
+	}
 	break;
 	
 #endregion

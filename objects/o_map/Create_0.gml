@@ -45,7 +45,7 @@ if (_current_room == r_test_room_farm){
 for (var _xp = 0; _xp < _map_width; _xp++){
 	for (var _yp = 0; _yp < _map_height; _yp++){
 		if (ds_grid_get(_map, _xp, _yp) != "water"){
-			var _random = irandom(16)
+			var _random = irandom(160)
 			if (_random == 1 or _random == 2){
 				var _tree = instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_broadleaf_tree)
 				_tree.depth = -_yp

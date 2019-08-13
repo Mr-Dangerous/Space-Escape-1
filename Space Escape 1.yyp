@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "2c9c2147-85e8-4e6f-a9e6-739279f8e548",
+            "Value": {
+                "id": "97760478-fc29-41ba-9bdb-9968260574f8",
+                "resourcePath": "sprites\\s_clear_terrain_border\\s_clear_terrain_border.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2de7e255-3109-4142-b00d-7ec39a681834",
             "Value": {
                 "id": "78ade649-3def-4824-b5e6-e1e2f5939a52",
@@ -404,6 +412,14 @@
                 "id": "84d25a18-7f3b-4f99-bfb4-41ba70aea365",
                 "resourcePath": "scripts\\add_bounce_to_move\\add_bounce_to_move.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9bf3d90a-f1d4-4796-80f8-4a40cf1e2adc",
+            "Value": {
+                "id": "507799a1-4892-4b2c-bbc1-b7c308d8fa40",
+                "resourcePath": "objects\\o_grid_builder\\o_grid_builder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
