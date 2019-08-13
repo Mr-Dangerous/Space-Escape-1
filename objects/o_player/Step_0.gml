@@ -22,6 +22,7 @@ interact = keyboard_check_pressed(ord("Q"));
 switch (state){
 #region Moving
 	case player.moving:
+
 	if (xspeed == 0 and yspeed == 0){
 		sprite_index = s_player_idle;
 	} else {

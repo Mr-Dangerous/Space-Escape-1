@@ -47,12 +47,14 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 		if (ds_grid_get(_map, _xp, _yp) != "water"){
 			var _random = irandom(16)
 			if (_random == 1){
-				instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_broadleaf_tree)
+				var _tree = instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_broadleaf_tree)
+				_tree.depth = -_yp
 				ds_grid_set(_terrain_map, _xp, _yp, "broadleaf tree")
 			}
 			if (_random == 2 or _random == 3){
 				instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_brambles)
 				ds_grid_set(_terrain_map, _xp, _yp, "brambles")
+				
 			}
 		}
 	}
