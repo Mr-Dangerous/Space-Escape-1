@@ -56,6 +56,11 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 			if (_random == 2 or _random == 3){
 				var bramble = instance_create_layer(_xp * tile_width, _yp * tile_width, "Instances", o_brambles)
 				ds_grid_set(_terrain_map, _xp, _yp, "brambles")
+				show_debug_message("brambles created!")
+				var check = ds_grid_get(_terrain_map, _xp, _yp)
+				show_debug_message(check)
+				show_debug_message(_xp)
+				show_debug_message(_yp)
 				if (_random = 3){
 					bramble.image_xscale = -1
 				}

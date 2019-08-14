@@ -2,6 +2,8 @@
 _map_object = instance_find(o_map, 0);
 _map = _map_object._map;
 _terrain_map = _map_object._terrain_map;
+_map_x_position = x/16
+_map_y_position = y/16
 #endregion
 
 #region Set up Controls
@@ -71,6 +73,7 @@ switch (state){
 		var i = floor((x + (20 * image_xscale)) / 16);
 		var j = floor((y + 16)/ 16);
 		var _tile = ds_grid_get(_map, i, j)
+		show_debug_message(_tile)
 		var tile_farmable = false
 		if (_tile = "grass" or
 			_tile = "flower" or
@@ -94,21 +97,14 @@ switch (state){
 		}
 	}	
 	if (build){
-		//needs tp be fixed
-		//I'm leaving this here until the next time I sit down to do this, but bah.
-		_snapped_x = floor(x/16)*16
-		_snapped_y = floor(y/16)*16
-		var _grid_builder = instance_create_layer(x, y, "Player", o_grid_builder)
-		if (image_xscale = 1){
-			_grid_builder.x = _snapped_x + 6
-		}
-		if (image_xscale = -1){
-			_grid_builder.x = floor((_snapped_x)/16)*16	
-		}
-		_grid_builder.y = floor((_snapped_y)/16)*16
-	}
-	if (build_released){
-		if (image_xscale = 1){
+		if(place_meeting(x + 16*image_xscale, y, o_difficult_terrain)){
+			var check = ds_grid_get(_terrain_map, _map_x_position + image_xscale, _map_y_position)
+			show_debug_message(check)
+			var difficult_terrain = instance_place(x + 16*image_xscale, y, o_difficult_terrain)
+			instance_destroy(difficult_terrain)
+			ds_grid_set(_terrain_map, _map_x_position + image_xscale, _map_y_position, "none")
+			check = ds_grid_get(_terrain_map, _map_x_position + image_xscale, _map_y_position)
+			show_debug_message(check)
 		}
 	}
 	break;

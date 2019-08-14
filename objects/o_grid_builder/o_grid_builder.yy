@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "9bf3d90a-f1d4-4796-80f8-4a40cf1e2adc"
+        },
+        {
+            "id": "96181077-4c01-4a70-bda4-ed37fa59d104",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "9bf3d90a-f1d4-4796-80f8-4a40cf1e2adc"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -44,34 +54,6 @@
             "resourceFilter": 1023,
             "value": "instance_find(o_player, 0)",
             "varName": "_player",
-            "varType": 4
-        },
-        {
-            "id": "87a6fad1-217d-4e65-95d7-b31ffe0e9cf6",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "ds_grid_create(1, 1)",
-            "varName": "_map",
-            "varType": 4
-        },
-        {
-            "id": "c02a56b1-e47d-47bd-8922-948ca47e1f6a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "ds_grid_create(1, 1)",
-            "varName": "_terrain_map",
             "varType": 4
         },
         {
