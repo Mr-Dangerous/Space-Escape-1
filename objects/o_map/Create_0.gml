@@ -1,3 +1,41 @@
+#region Room creation.  Will create a room if none exsists.
+//adding this in later!
+//for now, using r_test_room_farm for the test room
+randomize();//just making each map truly random for now.
+_room_width = room_width
+_room_height = room_height
+_map_width = _room_width/_tile_width
+_map_height = _room_height/_tile_width
+ds_grid_resize(_map, _map_width, _map_height)
+#endregion
+
+#region Assign background sprites
+//add in features first
+for (var _xp = 0; _xp < _map_width; _xp++){
+	for (var _yp = 0; _yp < _map_height; _yp++){
+		var _tile = ds_grid_get(_map, _xp, _yp)
+		var _seed = irandom (100)
+		if (_seed == 100 and _tile = 0){
+			//_random_seed = irandom(100) or however many cases there are
+			_random_seed = 0;
+			add_tile_feature(_random_seed, _map, _xp, _yp)
+		}
+	}
+}
+//add in filler background next
+for (var _xp = 0; _xp < _map_width; _xp++){
+	for (var _yp = 0; _yp < _map_height; _yp++){
+		var _tile = ds_grid_get(_map, _xp, _yp)
+		
+		if (_tile == 0){
+			ds_grid_set(_map, _xp, _yp, "grass")
+		}	
+	}
+}
+//add in objects next
+#endregion
+
+/*
 //this object will render and draw the map of background tiles.
 var _current_room = room
 
@@ -88,13 +126,5 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 		}	
 	}
 }
-	
-
-
-
-
-
-
-
-
+*/
 

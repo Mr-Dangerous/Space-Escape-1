@@ -57,20 +57,6 @@
             "varType": 4
         },
         {
-            "id": "b95c16ae-3563-48e5-8735-a50968b6d772",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "ds_grid_create(1, 1)",
-            "varName": "_terrain_map",
-            "varType": 4
-        },
-        {
             "id": "da0aa4d8-e937-492a-8b5d-c9c3ef6577de",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -81,8 +67,36 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "16",
-            "varName": "tile_width",
+            "varName": "_tile_width",
             "varType": 1
+        },
+        {
+            "id": "038afb45-8d2a-42ec-ba00-aeb1b4782026",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "room_width\/_tile_width",
+            "varName": "_map_width",
+            "varType": 4
+        },
+        {
+            "id": "ef67dc88-6d61-4bcd-b0a9-73febefdf543",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "room_height\/_tile_width",
+            "varName": "variable_name",
+            "varType": 4
         }
     ],
     "solid": false,

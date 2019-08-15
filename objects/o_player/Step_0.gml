@@ -1,7 +1,6 @@
 #region Fetch the map
 _map_object = instance_find(o_map, 0);
 _map = _map_object._map;
-_terrain_map = _map_object._terrain_map;
 _map_x_position = x/16
 _map_y_position = y/16
 #endregion
