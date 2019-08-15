@@ -71,7 +71,8 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 				if (_random == 6){
 					_plant.image_xscale = -1
 				}
-					
+			} else {
+				ds_grid_set(_terrain_map, _xp, _yp, "none")
 			}
 		}
 	}
