@@ -16,19 +16,18 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 	for (var _yp = 0; _yp < _map_height; _yp++){
 		var _list = ds_list_create()
 		ds_list_clear(_list)
-		ds_list_set(_list, 0, "none") 
-		ds_grid_set(_map, _xp, _yp, _list)
 		var _tile = ds_grid_get(_map, _xp, _yp)
 		var _tile_background_value = ds_list_find_value(_tile, 0)
 		show_debug_message(_tile_background_value)
 		var _seed = irandom (100)
-		if (_seed == 100 and _tile_background_value == "none"){
+		if (_seed == 100 and _tile_background_value == undefined){
 			//_random_seed = irandom(100) or however many cases there are
 			_random_seed = 0;
 			add_tile_feature(_random_seed, _map, _xp, _yp)
 		}
 	}
 }
+
 //add in filler background next
 for (var _xp = 0; _xp < _map_width; _xp++){
 	for (var _yp = 0; _yp < _map_height; _yp++){
@@ -36,13 +35,42 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 		_list = ds_grid_get(_map, _xp, _yp)
 		_tile = ds_list_find_value(_list, 0)
 		
-		if (_tile == "none"){
+		if (_tile == undefined){
 			ds_list_set(_list, 0, "grass")
 			ds_grid_set(_map, _xp, _yp, _list)
 		}	
 	}
 }
-//add in objects next
+//add in objects
+var _increased_chance = irandom(5)
+for (var _xp = 0; _xp < _map_width; _xp++){
+	for (var _yp = 0; _yp < _map_height; _yp++){
+		var _list = ds_list_create()
+		_list = ds_grid_get(_map, _xp, _yp)
+		var _tile_background_value = ds_list_find_value(_list, 0)
+		check_adjacent_squares_for_spawnables()
+		var _seed = irandom (10)
+		var _tile_spawnable = false
+		switch (_tile_background_value){
+			case "grass":
+				_tile_spawnable = true
+			break;
+			case "flower":
+				_tile_spawnable = true
+			break;
+		}
+		if (_seed == 10 and _tile_spawnable == true){
+			//should add in a script to make it more likely that certain terrain features spawn closer to eachother
+			ds_list_set(_list, 1, "brambles")
+			ds_grid_set(_map, _xp, _yp, _list)
+			instance_create_layer(_xp*_tile_width, _yp*_tile_width, "Instances", o_brambles)
+		}
+	}
+}
+
+
+
+
 #endregion
 
 /*

@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "56a0ae8f-268c-47f4-9c13-c89cb13d5807",
+            "Value": {
+                "id": "8d74209e-cc64-4feb-b956-4813412fd435",
+                "resourcePath": "scripts\\check_adjacent_squares_for_spawnables\\check_adjacent_squares_for_spawnables.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "59c4d7d1-260b-4ba4-bd58-9958e774eb82",
             "Value": {
                 "id": "34fb2388-f8f1-44b5-8ec7-030ee190352a",
@@ -742,7 +750,8 @@
         "cdcf8930-106e-4ea0-abbd-2f21a3972069",
         "895f81ab-9583-426c-b61c-f5ebba203aa6",
         "7830edbf-519c-457f-9ee8-833aab7514d5",
-        "17104471-cd95-4c13-bc55-c77ba6cc4638"
+        "17104471-cd95-4c13-bc55-c77ba6cc4638",
+        "56a0ae8f-268c-47f4-9c13-c89cb13d5807"
     ],
     "tutorial": ""
 }

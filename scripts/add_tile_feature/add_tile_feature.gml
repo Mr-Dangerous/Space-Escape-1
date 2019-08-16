@@ -11,24 +11,38 @@ var grid = argument1;
 var _x = argument2
 var _y = argument3
 
-
+show_debug_message("add_tile_feature_fired")
 
 switch (seed){
 	#region 2x2 pool with surrounding flowers, seed = 0
 	case 0:
-		for (var _i = 0; _i < 3; _i++){
-			for (var _j = 0; _j < 3; _j++){
+		for (var _i = 0; _i < 4; _i++){
+			for (var _j = 0; _j < 4; _j++){
 				var _list = ds_list_create()
 				switch (_i){
 					case 1:
-					if (_j == 1){
+					if (_j == 1 or _j == 2){
 						ds_list_set(_list, 0, "water")
 						ds_grid_set(grid, _x + _i, _y + _j, _list)
 					}
-					if (_j == 2){
+					if (_j = 0 or _j == 3){
+						ds_list_set(_list, 0, "flower")
+						ds_grid_set(grid, _x + _i, _y + _j, _list)
+					}
+					break;
+					case 2:
+					if (_j == 1 or _j == 2){
 						ds_list_set(_list, 0, "water")
 						ds_grid_set(grid, _x + _i, _y + _j, _list)
 					}
+					if (_j = 0 or _j == 3){
+						ds_list_set(_list, 0, "flower")
+						ds_grid_set(grid, _x + _i, _y + _j, _list)
+					}
+					break;
+					default:
+					ds_list_set(_list, 0, "flower")
+					ds_grid_set(grid, _x + _i, _y + _j, _list) 
 					break;
 				}
 			}
