@@ -36,7 +36,8 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 		_tile = ds_list_find_value(_list, 0)
 		
 		if (_tile == undefined){
-			ds_list_set(_list, 0, "grass")
+			
+			ds_list_set(_list, 0, return_random_background_tile())
 			ds_grid_set(_map, _xp, _yp, _list)
 		}	
 	}
@@ -59,15 +60,17 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 			break;
 		}
 		var _seed = irandom (10)
-		if (check_adjacent_squares_for_spawnables(_xp, _yp, _map, "brambles")){
-			_seed = irandom (1)
-			show_debug_message("script fired in object")
+		var _spawnable = return_random_difficult_terrain()
+		if (check_adjacent_squares_for_spawnables(_xp, _yp, _map, _spawnable)){
+			_seed = irandom (2)
 		}
 		if (_seed == 1 and _tile_spawnable == true){
 			//should add in a script to make it more likely that certain terrain features spawn closer to eachother
-			ds_list_set(_list, 1, "brambles")
+			ds_list_set(_list, 1, _spawnable)
 			ds_grid_set(_map, _xp, _yp, _list)
-			instance_create_layer(_xp*_tile_width, _yp*_tile_width, "Instances", o_brambles)
+			var _spawn_object = get_spawnable_object(_spawnable)
+			var _instance = instance_create_layer(_xp*_tile_width, _yp*_tile_width, "Instances", _spawn_object)
+			
 		}
 	}
 }
