@@ -16,6 +16,30 @@ var _y = argument3
 switch (seed){
 	#region 2x2 pool with surrounding flowers, seed = 0
 	case 0:
+		for (var _i = 0; _i < 3; _i++){
+			for (var _j = 0; _j < 3; _j++){
+				var _list = ds_list_create()
+				switch (_i){
+					case 1:
+					if (_j == 1){
+						ds_list_set(_list, 0, "water")
+						ds_grid_set(grid, _x + _i, _y + _j, _list)
+					}
+					if (_j == 2){
+						ds_list_set(_list, 0, "water")
+						ds_grid_set(grid, _x + _i, _y + _j, _list)
+					}
+					break;
+				}
+			}
+		}
+	break;
+	#endregion
+}
+	
+	
+	
+/*
 
 		//A 4x4 block with a pool in the center
 		var i = 1
@@ -60,6 +84,4 @@ switch (seed){
 		ds_grid_set(grid, _x+i, _y, "flower")
 		_y +=1
 		i = 0
-	break;
-	#endregion
-}
+		*/

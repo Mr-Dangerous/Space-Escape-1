@@ -69,34 +69,6 @@
             "value": "16",
             "varName": "_tile_width",
             "varType": 1
-        },
-        {
-            "id": "038afb45-8d2a-42ec-ba00-aeb1b4782026",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "room_width\/_tile_width",
-            "varName": "_map_width",
-            "varType": 4
-        },
-        {
-            "id": "ef67dc88-6d61-4bcd-b0a9-73febefdf543",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "room_height\/_tile_width",
-            "varName": "variable_name",
-            "varType": 4
         }
     ],
     "solid": false,

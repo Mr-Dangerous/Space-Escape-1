@@ -2,6 +2,7 @@
 //adding this in later!
 //for now, using r_test_room_farm for the test room
 randomize();//just making each map truly random for now.
+room_goto(r_test_room_farm)
 _room_width = room_width
 _room_height = room_height
 _map_width = _room_width/_tile_width
@@ -10,12 +11,18 @@ ds_grid_resize(_map, _map_width, _map_height)
 #endregion
 
 #region Assign background sprites
-//add in features first
+//add in land features first
 for (var _xp = 0; _xp < _map_width; _xp++){
 	for (var _yp = 0; _yp < _map_height; _yp++){
+		var _list = ds_list_create()
+		ds_list_clear(_list)
+		ds_list_set(_list, 0, "none") 
+		ds_grid_set(_map, _xp, _yp, _list)
 		var _tile = ds_grid_get(_map, _xp, _yp)
+		var _tile_background_value = ds_list_find_value(_tile, 0)
+		show_debug_message(_tile_background_value)
 		var _seed = irandom (100)
-		if (_seed == 100 and _tile = 0){
+		if (_seed == 100 and _tile_background_value == "none"){
 			//_random_seed = irandom(100) or however many cases there are
 			_random_seed = 0;
 			add_tile_feature(_random_seed, _map, _xp, _yp)
@@ -25,10 +32,13 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 //add in filler background next
 for (var _xp = 0; _xp < _map_width; _xp++){
 	for (var _yp = 0; _yp < _map_height; _yp++){
-		var _tile = ds_grid_get(_map, _xp, _yp)
+		_list = ds_list_create()
+		_list = ds_grid_get(_map, _xp, _yp)
+		_tile = ds_list_find_value(_list, 0)
 		
-		if (_tile == 0){
-			ds_grid_set(_map, _xp, _yp, "grass")
+		if (_tile == "none"){
+			ds_list_set(_list, 0, "grass")
+			ds_grid_set(_map, _xp, _yp, _list)
 		}	
 	}
 }
