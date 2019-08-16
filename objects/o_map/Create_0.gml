@@ -42,14 +42,13 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 	}
 }
 //add in objects
-var _increased_chance = irandom(5)
+
 for (var _xp = 0; _xp < _map_width; _xp++){
 	for (var _yp = 0; _yp < _map_height; _yp++){
 		var _list = ds_list_create()
 		_list = ds_grid_get(_map, _xp, _yp)
 		var _tile_background_value = ds_list_find_value(_list, 0)
-		check_adjacent_squares_for_spawnables()
-		var _seed = irandom (10)
+		
 		var _tile_spawnable = false
 		switch (_tile_background_value){
 			case "grass":
@@ -59,7 +58,12 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 				_tile_spawnable = true
 			break;
 		}
-		if (_seed == 10 and _tile_spawnable == true){
+		var _seed = irandom (10)
+		if (check_adjacent_squares_for_spawnables(_xp, _yp, _map, "brambles")){
+			_seed = irandom (1)
+			show_debug_message("script fired in object")
+		}
+		if (_seed == 1 and _tile_spawnable == true){
 			//should add in a script to make it more likely that certain terrain features spawn closer to eachother
 			ds_list_set(_list, 1, "brambles")
 			ds_grid_set(_map, _xp, _yp, _list)
