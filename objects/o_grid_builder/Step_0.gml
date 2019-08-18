@@ -7,22 +7,27 @@ if (one){
 	_scale = 1
 	image_xscale = 1
 	image_yscale = 1
+	_y_offset = 0
 }
 if (two){
 	_scale = 2
 	image_xscale = 2
 	image_yscale = 2
+	_y_offset = 8 
 }
 if (three){
 	_scale = 3
 	image_xscale = 3
 	image_yscale = 3
+	_y_offset = 0
 }
 if (four){
 	_scale = 4
 	image_xscale = 4
 	image_yscale = 4
+	_y_offset = 8 
 }
+_x_offset = ((_scale * 8)-8) * _player.image_xscale
 
 
 
@@ -30,12 +35,11 @@ _x = _player.x
 _y = _player.y
 map_offset = _player.image_xscale * _scale
 
+_map_x = round((_x/_tile_width) + map_offset)
+_map_y = round(_y/_tile_width)
 
-_map_x = floor((_x/_tile_width) + map_offset)
-_map_y = floor(_y/_tile_width)
-
-x = (_map_x * _tile_width)
-y = (_map_y * _tile_width)
+x = (_map_x * _tile_width - _x_offset)
+y = (_map_y * _tile_width - _y_offset)+16
 
 if (place_meeting(x, y, o_difficult_terrain)){
 	sprite_index = s_building_outline_positive
