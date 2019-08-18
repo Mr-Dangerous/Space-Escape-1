@@ -97,6 +97,20 @@
             "value": "instance_find(o_player, 0)",
             "varName": "_player",
             "varType": 4
+        },
+        {
+            "id": "23b66823-4c16-406f-a40b-6e5066858a0c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "_scale",
+            "varType": 0
         }
     ],
     "solid": false,

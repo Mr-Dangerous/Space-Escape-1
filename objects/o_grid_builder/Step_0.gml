@@ -1,8 +1,34 @@
+var one = keyboard_check_pressed(ord("1"))
+var two = keyboard_check_pressed(ord("2"))
+var three = keyboard_check_pressed(ord("3"))
+var four = keyboard_check_pressed(ord("4"))
+
+if (one){
+	_scale = 1
+	image_xscale = 1
+	image_yscale = 1
+}
+if (two){
+	_scale = 2
+	image_xscale = 2
+	image_yscale = 2
+}
+if (three){
+	_scale = 3
+	image_xscale = 3
+	image_yscale = 3
+}
+if (four){
+	_scale = 4
+	image_xscale = 4
+	image_yscale = 4
+}
+
 
 
 _x = _player.x
 _y = _player.y
-map_offset = _player.image_xscale 
+map_offset = _player.image_xscale * _scale
 
 
 _map_x = floor((_x/_tile_width) + map_offset)
