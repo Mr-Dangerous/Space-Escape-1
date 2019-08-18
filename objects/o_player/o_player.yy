@@ -52,7 +52,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "1.5",
             "varName": "max_x_speed",
             "varType": 0
         },
@@ -122,7 +122,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".3",
+            "value": ".2",
             "varName": "acceleration",
             "varType": 0
         },

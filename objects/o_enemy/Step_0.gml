@@ -46,7 +46,7 @@ case enemy.moving:
 		xspeed = 0;
 		yspeed = 0;
 	}
-	move(o_border);
+	move(o_border, o_difficult_terrain);
 	break;
 #endregion	
 #region Alert
@@ -54,7 +54,7 @@ case enemy.alert:
 
 	disengage_player()
 	find_path_to_player();
-	move(o_border);
+	move(o_border, o_difficult_terrain);
 	var _attack_check = check_for_attack(attack_range)
 	if (_attack_check){
 		//Acquire target
@@ -109,7 +109,7 @@ case enemy.ranged:
 	find_path_to_player()
 	xspeed = xspeed* 3
 	yspeed = yspeed* 3
-	move(o_border)
+	move(o_border, o_difficult_terrain)
 	break;
 #endregion
 
