@@ -2,6 +2,13 @@ var one = keyboard_check_pressed(ord("1"))
 var two = keyboard_check_pressed(ord("2"))
 var three = keyboard_check_pressed(ord("3"))
 var four = keyboard_check_pressed(ord("4"))
+var zero = keyboard_check_pressed(ord("0"))
+var build = keyboard_check_pressed(ord("R"))
+
+image_alpha = 1
+if (zero){
+	_scale = 0
+}
 
 if (one){
 	_scale = 1
@@ -27,6 +34,12 @@ if (four){
 	image_yscale = 4
 	_y_offset = 8 
 }
+
+if (_scale = 0){
+	image_alpha = 0
+	exit;
+}
+
 _x_offset = ((_scale * 8)-8) * _player.image_xscale
 
 
@@ -43,6 +56,49 @@ y = (_map_y * _tile_width - _y_offset)+16
 
 if (place_meeting(x, y, o_difficult_terrain)){
 	sprite_index = s_building_outline_positive
+	#region destroy the difficult terrain
+	if (build){
+		var _instance_list = ds_list_create()
+		switch(_scale){
+			case 0:
+			break;
+			case 1:
+				var _instance = instance_place(x, y, o_difficult_terrain)
+				ds_list_add(_instance_list, _instance);
+			break;
+			case 2:
+				for (var _xp = 0; _xp < 2; _xp++){
+					for (var _yp = -1; _yp < 1; _yp++){
+					var _instance = instance_place(x + _xp*image_xscale, y+_yp, o_difficult_terrain);
+					ds_list_add(_instance_list, _instance)
+					}
+				}
+			break;
+			case 3:
+				for (var _xp = 0; _xp < 3; _xp++){
+						for (var _yp = -1; _yp < 2; _yp++){
+						var _instance = instance_place(x + _xp*image_xscale, y+_yp, o_difficult_terrain);
+						ds_list_add(_instance_list, _instance)
+						}
+					}
+			break;
+			case 4:
+				for (var _xp = 0; _xp < 4; _xp++){
+						for (var _yp = -2; _yp < 2; _yp++){
+						var _instance = instance_place(x + _xp*image_xscale, y+_yp, o_difficult_terrain);
+						ds_list_add(_instance_list, _instance)
+						}
+					}
+			break;
+		}
+		var _list_size = ds_list_size(_instance_list)
+		show_debug_message(_list_size)
+		
+		for (var i = 0; i < _list_size; i++)
+			var _instance = ds_list_find_value(_instance_list, i)
+			instance_destroy(_instance)
+		}	 
+	#endregion
 } else {
 	sprite_index = s_building_outline_negative
 }

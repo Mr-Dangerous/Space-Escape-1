@@ -1,8 +1,9 @@
 #region Fetch the map
 _map_object = instance_find(o_map, 0);
 _map = _map_object._map;
-_map_x_position = x/16
-_map_y_position = y/16
+#endregion
+#region Rendering
+depth = -y
 #endregion
 
 #region Set up Controls
@@ -14,8 +15,7 @@ space = keyboard_check(vk_space);
 attack = keyboard_check_pressed(ord("E"));
 attack_release = keyboard_check_released(ord("E"));
 interact = keyboard_check_pressed(ord("Q"));
-build = keyboard_check_pressed(ord("R"));
-build_released = keyboard_check_released(ord("R"))
+
 
 
 
@@ -96,8 +96,9 @@ switch (state){
 			}
 		}
 	}
+	break;
 	//clear terrain, later cycle through buildings to place
-
+/*
 	if (build){
 		for (var i = 0; i < 3; i++){
 			for (var j = -1; j<2; j++){
@@ -105,7 +106,6 @@ switch (state){
 				var l= floor(((y + 16) + (j * 16))  / 16);
 				var _tile = ds_grid_get(_map, k, l)
 				var tile_farmable = false
-				var _terrain_tile = ds_grid_get(_terrain_map, k, l)
 				if (_tile = "grass" or
 					_tile = "flower" or
 					_tile = "tilled"){
@@ -162,7 +162,8 @@ switch (state){
 	}
 	
 	break;
-	
+*/
+
 #endregion
 #region Attacking
 	case player.attacking:
