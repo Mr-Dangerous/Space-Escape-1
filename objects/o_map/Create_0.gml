@@ -18,7 +18,6 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 		ds_list_clear(_list)
 		var _tile = ds_grid_get(_map, _xp, _yp)
 		var _tile_background_value = ds_list_find_value(_tile, 0)
-		show_debug_message(_tile_background_value)
 		var _seed = irandom (100)
 		if (_seed == 100 and _tile_background_value == undefined){
 			//_random_seed = irandom(100) or however many cases there are

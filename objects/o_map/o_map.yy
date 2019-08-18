@@ -43,20 +43,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "a27b7a9a-adb7-4777-b973-c86417d2d285",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "ds_grid_create(1, 1)",
-            "varName": "_map",
-            "varType": 4
-        },
-        {
             "id": "da0aa4d8-e937-492a-8b5d-c9c3ef6577de",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -69,6 +55,20 @@
             "value": "16",
             "varName": "_tile_width",
             "varType": 1
+        },
+        {
+            "id": "f9ff3c9c-b83d-4f4e-bc30-e3c5d80328e3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "ds_grid_create(1,1)",
+            "varName": "_map",
+            "varType": 4
         }
     ],
     "solid": false,
