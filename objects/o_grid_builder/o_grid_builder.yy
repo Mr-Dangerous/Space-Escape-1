@@ -43,21 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "0c625bbb-18b1-4207-9987-1a397cd59b5d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "instance_find(o_player, 0)",
-            "varName": "_player",
-            "varType": 4
-        },
-        {
-            "id": "20dfbad8-e594-45f4-98eb-1970c47c0a16",
+            "id": "894b2a24-50f1-4a84-b82d-c8100b23e44a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -68,6 +54,48 @@
             "resourceFilter": 1023,
             "value": "instance_find(o_map, 0)",
             "varName": "_map_object",
+            "varType": 4
+        },
+        {
+            "id": "acfc6b48-3546-405f-8beb-cf3b8cd7e45b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "ds_grid_create(1,1)",
+            "varName": "_map",
+            "varType": 4
+        },
+        {
+            "id": "58bea942-7c62-4579-aa2b-68f14ecdfaad",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "16",
+            "varName": "_tile_width",
+            "varType": 1
+        },
+        {
+            "id": "28e8caa8-bb55-4e87-a6bf-4087ab5f925b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "instance_find(o_player, 0)",
+            "varName": "_player",
             "varType": 4
         }
     ],
