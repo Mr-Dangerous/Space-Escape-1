@@ -68,22 +68,13 @@ if (place_meeting(x, y, o_difficult_terrain)){
 						ds_list_add(_instance_list, _instance)
 				}
 		break;
+		
 		case 2:
-		image_xscale = 1
-		image_yscale = 1
-			for (var _xp = 0; _xp < 2; _xp++){
-				for (var _yp = 0; _yp < 2; _yp++){
-					
-					var _instance = instance_place(x + _xp*image_xscale, y+_yp, o_difficult_terrain);
-					ds_list_add(_instance_list, _instance)
-					if (_instance != undefined){
-						ds_list_add(_instance_list, _instance)
-					}
-					
-				}
+		var _instance = instance_place(x, y, o_difficult_terrain);
+		ds_list_add(_instance_list, _instance)
+		if (_instance != undefined){
+			ds_list_add(_instance_list, _instance)
 			}
-		image_xscale = 2
-		image_yscale = 2
 		break;
 		
 		case 3:
@@ -98,21 +89,13 @@ if (place_meeting(x, y, o_difficult_terrain)){
 		break;
 		
 		case 4:
-		image_xscale = 1
-		image_yscale = 1
-			for (var _xp = 0; _xp < 4; _xp++){
-					for (var _yp = -0; _yp < 4; _yp++){
-						
-					var _instance = instance_place(x + _xp*image_xscale, y+_yp, o_difficult_terrain);
-					ds_list_add(_instance_list, _instance)
-					if (_instance != undefined){
-						ds_list_add(_instance_list, _instance)
-					}
-				}
+		var _instance = instance_place(x, y, o_difficult_terrain);
+		ds_list_add(_instance_list, _instance)
+		if (_instance != undefined){
+			ds_list_add(_instance_list, _instance)
 			}
-		image_xscale = 4 
-		image_yscale = 4
 		break;
+		
 		}
 		var _list_size = ds_list_size(_instance_list)
 		show_debug_message(_list_size)
