@@ -4,6 +4,7 @@ var three = keyboard_check_pressed(ord("3"))
 var four = keyboard_check_pressed(ord("4"))
 var zero = keyboard_check_pressed(ord("0"))
 var build = keyboard_check_pressed(ord("R"))
+var plant = keyboard_check_pressed(ord("T"))
 
 image_alpha = 1
 if (zero){
@@ -108,6 +109,36 @@ if (place_meeting(x, y, o_difficult_terrain)){
 } else {
 	sprite_index = s_building_outline_negative
 }
+
+if (plant){
+	if (place_empty(x, y)){
+		
+		switch(_scale){
+			case 0:
+				
+			break;
+			case 1:
+				instance_create_layer(x, y, "Instances", o_bluecot)
+			break;
+		
+			case 2:
+		
+			break;
+		
+			case 3:
+
+			break;
+			
+			case 4:
+		
+			break;
+		}
+	}
+}
+
+		
+		
+		
 
 /*var _map_element_list = ds_list_create()
 ds_list_clear(_map_element_list)

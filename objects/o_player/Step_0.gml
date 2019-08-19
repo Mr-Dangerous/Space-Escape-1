@@ -15,8 +15,7 @@ space = keyboard_check(vk_space);
 attack = keyboard_check_pressed(ord("E"));
 attack_release = keyboard_check_released(ord("E"));
 interact = keyboard_check_pressed(ord("Q"));
-
-
+plant = keyboard_check_pressed(ord("T"));
 
 
 #endregion
@@ -97,6 +96,8 @@ switch (state){
 		}
 	}
 	break;
+	
+#region clear terrain - warning!  deprecated!
 	//clear terrain, later cycle through buildings to place
 /*
 	if (build){
@@ -163,6 +164,7 @@ switch (state){
 	
 	break;
 */
+#endregion
 
 #endregion
 #region Attacking

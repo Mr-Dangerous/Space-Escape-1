@@ -39,10 +39,26 @@
             }
         },
         {
+            "Key": "00e3fa72-1890-424c-a0e1-a17a24220c53",
+            "Value": {
+                "id": "aef780aa-901a-4a41-9007-79ba6141efd2",
+                "resourcePath": "sprites\\s_button\\s_button.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "01c64d94-cd03-4bdc-92fe-aa81775799d3",
             "Value": {
                 "id": "b138f244-6336-4dc6-99a9-c4054c6c8d5c",
                 "resourcePath": "objects\\o_player\\o_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "024b1c7d-1307-4ec1-87cb-afaa50a3d3a1",
+            "Value": {
+                "id": "d2a37dec-16e2-4abe-9b27-f038e43b40d7",
+                "resourcePath": "objects\\o_bluecot\\o_bluecot.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -351,6 +367,14 @@
             }
         },
         {
+            "Key": "6e9b156b-148e-44bd-aa71-1323a0e5c3c8",
+            "Value": {
+                "id": "8e416422-4079-4746-a3ae-959f5b8606f9",
+                "resourcePath": "objects\\o_button\\o_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6ff79156-ec8d-4c8b-a900-49bdb238aa42",
             "Value": {
                 "id": "ef897b37-96e6-49eb-b8b1-0c5f8b18fea2",
@@ -564,6 +588,14 @@
                 "id": "2b526934-c0e5-4ca3-b7f4-cd0bb143a6d8",
                 "resourcePath": "views\\a86c271b-3879-4e3c-8ac2-f6d2818c775b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ab264b80-cf4a-4f95-b8e6-d360860c8fc3",
+            "Value": {
+                "id": "c0ffc3fc-a505-4b24-9580-5827552b741e",
+                "resourcePath": "objects\\o_farmable\\o_farmable.yy",
+                "resourceType": "GMObject"
             }
         },
         {

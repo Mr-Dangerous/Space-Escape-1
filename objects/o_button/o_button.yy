@@ -1,28 +1,38 @@
 {
-    "id": "41f92f71-885d-4769-98b2-f3659ca666fe",
+    "id": "6e9b156b-148e-44bd-aa71-1323a0e5c3c8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_UI",
+    "name": "o_button",
     "eventList": [
         {
-            "id": "1f17f623-955f-469c-9e27-b8c46fa059d6",
+            "id": "9949ef5d-510f-4c1c-ad3b-81e06814ed93",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "41f92f71-885d-4769-98b2-f3659ca666fe"
+            "m_owner": "6e9b156b-148e-44bd-aa71-1323a0e5c3c8"
         },
         {
-            "id": "7892758e-8600-4624-893c-7f14935cf163",
+            "id": "c27217f2-7ea5-47a6-b312-215137c9e03d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "41f92f71-885d-4769-98b2-f3659ca666fe"
+            "m_owner": "6e9b156b-148e-44bd-aa71-1323a0e5c3c8"
+        },
+        {
+            "id": "0d1dbf84-b11b-484c-8bfc-a520939bb651",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "6e9b156b-148e-44bd-aa71-1323a0e5c3c8"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -41,23 +51,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "850f0d40-a815-4ce0-82d7-00d56a8ee196",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "_date",
-            "varType": 1
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "00e3fa72-1890-424c-a0e1-a17a24220c53",
     "visible": true
 }
