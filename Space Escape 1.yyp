@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "72ea4cc6-030f-4587-b53d-0424737aefb1",
+            "Value": {
+                "id": "60fcbe18-bf18-44d8-aaa1-2873cbc38af9",
+                "resourcePath": "sprites\\s_supply_shed\\s_supply_shed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7488a0a3-6760-4d78-97f8-72a467d2a29c",
             "Value": {
                 "id": "18351f7c-8364-480b-8349-e54175818cfd",
