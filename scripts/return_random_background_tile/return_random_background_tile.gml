@@ -2,7 +2,7 @@
 one and returns it.  This way, the background can be one of many different backgrounds.
 the tile is rendered in the draw event
 */
-
+randomize()
 var _case = irandom_range(1, 2)
 
 switch(_case){

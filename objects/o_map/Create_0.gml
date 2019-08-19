@@ -32,11 +32,12 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 	for (var _yp = 0; _yp < _map_height; _yp++){
 		_list = ds_list_create()
 		_list = ds_grid_get(_map, _xp, _yp)
+		show_debug_message(_list)
 		_tile = ds_list_find_value(_list, 0)
 		
 		if (_tile == undefined){
-			
-			ds_list_set(_list, 0, return_random_background_tile())
+			var _background_tile = return_random_background_tile()
+			ds_list_set(_list, 0, _background_tile)
 			ds_grid_set(_map, _xp, _yp, _list)
 		}	
 	}
