@@ -1,1 +1,1 @@
-
+display_set_gui_maximize(1, 1, 0, 0)
