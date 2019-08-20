@@ -17,5 +17,13 @@ if (place_meeting(x, y + yspeed, difficult_terrain)){
 	yspeed = yspeed *.75;
 }
 
+if (place_meeting(x + xspeed, y, collision_object)){
+	
+	while (!place_meeting(x+ sign(xspeed), y, collision_object)){
+		x += sign(xspeed);	
+	}
+	xspeed = 0;
+}
+
 x += xspeed
 y += yspeed

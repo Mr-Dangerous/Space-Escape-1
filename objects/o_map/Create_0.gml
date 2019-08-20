@@ -1,7 +1,7 @@
 #region Room creation.  Will create a room if none exsists.
 //adding this in later!
 //for now, using r_test_room_farm for the test room
-randomize();//just making each map truly random for now.
+//randomize();//just making each map truly random for now.
 room_goto(r_test_room_farm)
 _room_width = room_width
 _room_height = room_height
@@ -72,7 +72,7 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 			ds_list_set(_list, 1, _spawnable)
 			ds_grid_set(_map, _xp, _yp, _list)
 			var _spawn_object = get_spawnable_object(_spawnable)
-			instance_create_depth(_xp*_tile_width, _yp*_tile_width, -y +8, _spawn_object)
+			instance_create_depth(_xp*_tile_width, _yp*_tile_width, (-_yp*_tile_width)+8, _spawn_object)
 			
 		}
 	}
