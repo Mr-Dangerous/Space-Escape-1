@@ -4,6 +4,9 @@ _map = _map_object._map;
 #endregion
 #region Rendering
 depth = -y
+if (place_meeting(x, y, o_transparent)){
+	o_transparent.image_alpha = .5
+}
 #endregion
 
 #region Set up Controls

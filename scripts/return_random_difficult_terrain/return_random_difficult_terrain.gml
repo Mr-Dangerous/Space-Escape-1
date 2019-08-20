@@ -8,13 +8,16 @@ It's not complete right now.
 */
 
 
-var _case = irandom_range(1, 2)
+var _case = irandom_range(1, 3)
 
 switch(_case){
 	case 1:
 		return "brambles"
-	break;
+		break;
 	case 2:
 		return "brambles with dead tree"
-	break;
+		break;
+	case 3:
+		return "broadleaf stump"
+		break;
 }

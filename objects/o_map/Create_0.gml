@@ -42,7 +42,7 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 		}	
 	}
 }
-//add in objects
+//add in objects, including borders
 
 for (var _xp = 0; _xp < _map_width; _xp++){
 	for (var _yp = 0; _yp < _map_height; _yp++){
@@ -58,6 +58,9 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 			case "flower":
 				_tile_spawnable = true
 			break;
+			case "water":
+				instance_create_layer(_xp * _tile_width, _yp * _tile_width, "Instances", o_border)
+			break;
 		}
 		var _seed = irandom (10)
 		var _spawnable = return_random_difficult_terrain()
@@ -69,7 +72,7 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 			ds_list_set(_list, 1, _spawnable)
 			ds_grid_set(_map, _xp, _yp, _list)
 			var _spawn_object = get_spawnable_object(_spawnable)
-			var _instance = instance_create_depth(_xp*_tile_width, _yp*_tile_width, -y +8, _spawn_object)
+			instance_create_depth(_xp*_tile_width, _yp*_tile_width, -y +8, _spawn_object)
 			
 		}
 	}

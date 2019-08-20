@@ -5,8 +5,11 @@ var _spawnable = argument0
 switch(_spawnable){
 	case "brambles":
 		return o_brambles
-	break;
+		break;
 	case "brambles with dead tree":
 		return o_bramble_with_dead_tree;
-	break;
+		break;
+	case "broadleaf stump":
+		return o_broadleaf_stump;
+		break;
 }
