@@ -8,7 +8,7 @@ It's not complete right now.
 */
 
 
-var _case = irandom_range(1, 3)
+var _case = irandom_range(1, 4)
 
 switch(_case){
 	case 1:
@@ -19,5 +19,8 @@ switch(_case){
 		break;
 	case 3:
 		return "broadleaf stump"
+		break;
+	case 4:
+		return "red rock"
 		break;
 }

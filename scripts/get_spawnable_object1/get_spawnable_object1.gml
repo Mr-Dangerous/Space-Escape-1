@@ -1,4 +1,4 @@
-///@param spawnable
+///@param spawenable
 
 var _spawnable = argument0
 

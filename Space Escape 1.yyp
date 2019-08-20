@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "56f99838-24db-49db-b7fb-6c92f15ef93b",
+            "Value": {
+                "id": "8bb57c30-c5c2-4f47-9a34-f94df615d48c",
+                "resourcePath": "objects\\o_impassable_terrain\\o_impassable_terrain.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "59c4d7d1-260b-4ba4-bd58-9958e774eb82",
             "Value": {
                 "id": "34fb2388-f8f1-44b5-8ec7-030ee190352a",
@@ -447,6 +455,14 @@
             }
         },
         {
+            "Key": "888b09be-dd54-4402-9bb7-97a9e0898731",
+            "Value": {
+                "id": "fa48f9d2-e849-4050-90ec-b2806ae03cee",
+                "resourcePath": "objects\\o_red_rock\\o_red_rock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "895f81ab-9583-426c-b61c-f5ebba203aa6",
             "Value": {
                 "id": "fb7c892e-550f-4f0a-8e68-0969df20174b",
@@ -511,6 +527,14 @@
             }
         },
         {
+            "Key": "934948a7-aa95-4ed4-a7c0-8935ad898a7e",
+            "Value": {
+                "id": "090733e4-4d25-4618-97e1-53910a47554e",
+                "resourcePath": "scripts\\get_spawnable_string\\get_spawnable_string.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "93b713e0-df58-4366-8eac-41cb1f77e912",
             "Value": {
                 "id": "6ea9c658-4c9a-4112-85ad-a5e7fbab44ed",
@@ -548,6 +572,14 @@
                 "id": "a7351257-1294-4539-a01a-bbf3565c772c",
                 "resourcePath": "views\\9d7388d8-e18e-4ed9-87c2-ea562794cd2e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9f8b75a0-5ec4-4c1c-9e5a-eb897f70407e",
+            "Value": {
+                "id": "9c22e238-b8d2-481d-a147-7fd99b03958a",
+                "resourcePath": "sprites\\s_red_rock\\s_red_rock.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -869,6 +901,7 @@
         "3c7b4228-67a8-492d-88e4-75bc09bd3c43",
         "93b713e0-df58-4366-8eac-41cb1f77e912",
         "f2cd5bed-5b64-42f5-96c0-de0de2526cfe",
+        "934948a7-aa95-4ed4-a7c0-8935ad898a7e",
         "929104c4-6fe0-4147-a4e9-050ccf2cd74b",
         "a0bfb105-be46-471c-ae94-b0cd979ece7c",
         "98963979-da91-4f7d-8a5b-b8d8dcacabd7",
