@@ -7,6 +7,9 @@ depth = -y
 if (place_meeting(x, y, o_transparent)){
 	o_transparent.image_alpha = .5
 }
+if (place_meeting(xprevious, yprevious, o_transparent) and !place_meeting(x, y, o_transparent)){
+	o_transparent.image_alpha = 1
+}
 #endregion
 
 #region Set up Controls

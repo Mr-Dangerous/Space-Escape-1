@@ -1,3 +1,4 @@
+
 var one = keyboard_check_pressed(ord("1"))
 var two = keyboard_check_pressed(ord("2"))
 var three = keyboard_check_pressed(ord("3"))
@@ -111,6 +112,16 @@ if (place_meeting(x, y, o_difficult_terrain)){
 }
 
 if (plant){
+	var _difficult_terrain = place_meeting(x, y, o_difficult_terrain)
+	var _border = place_meeting(x, y, o_border)
+	var _farmable = place_meeting(x, y, o_farmable)
+	var _diff_message = string(string("difficult terrain = ") + string(_difficult_terrain))
+	var _border_message = string(string("border = ") + string(_border))
+	var _farmable_message = string(string("farmable = ") + string(_farmable))
+	show_debug_message(_diff_message)
+	show_debug_message(_border_message)
+	show_debug_message(_farmable_message)
+	
 	if (!place_meeting(x, y, o_difficult_terrain) and (!place_meeting(x, y, o_border)) and (!place_meeting(x, y, o_farmable))){
 		
 		switch(_scale){
