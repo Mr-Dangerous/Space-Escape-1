@@ -69,6 +69,20 @@
             "value": "0",
             "varName": "_date",
             "varType": 0
+        },
+        {
+            "id": "d567ffc3-93f7-4988-a646-61edf980211f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_harvestable",
+            "varType": 3
         }
     ],
     "solid": false,

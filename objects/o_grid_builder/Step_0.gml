@@ -111,14 +111,14 @@ if (place_meeting(x, y, o_difficult_terrain)){
 }
 
 if (plant){
-	if (place_empty(x, y)){
+	if (!place_meeting(x, y, o_difficult_terrain) and (!place_meeting(x, y, o_border)) and (!place_meeting(x, y, o_farmable))){
 		
 		switch(_scale){
 			case 0:
 				
 			break;
 			case 1:
-				instance_create_layer(x, y, "Instances", o_bluecot)
+				instance_create_depth(x, y, -y +8, o_bluecot)
 			break;
 		
 			case 2:

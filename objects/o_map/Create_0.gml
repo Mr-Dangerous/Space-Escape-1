@@ -69,7 +69,7 @@ for (var _xp = 0; _xp < _map_width; _xp++){
 			ds_list_set(_list, 1, _spawnable)
 			ds_grid_set(_map, _xp, _yp, _list)
 			var _spawn_object = get_spawnable_object(_spawnable)
-			var _instance = instance_create_layer(_xp*_tile_width, _yp*_tile_width, "Instances", _spawn_object)
+			var _instance = instance_create_depth(_xp*_tile_width, _yp*_tile_width, -y +8, _spawn_object)
 			
 		}
 	}
