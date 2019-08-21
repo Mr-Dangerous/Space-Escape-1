@@ -45,6 +45,20 @@
             "value": "instance_find(o_UI, 0);",
             "varName": "_ui_object",
             "varType": 4
+        },
+        {
+            "id": "6cc2b3b5-ca2e-411a-8e98-25c30265045e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_plant_selected",
+            "varType": 3
         }
     ],
     "solid": false,

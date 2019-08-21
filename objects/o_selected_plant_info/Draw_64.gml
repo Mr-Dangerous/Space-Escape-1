@@ -13,7 +13,7 @@ var _yield_message = string(string("Yield: ") + (_yield))
 
 
 var _x = x + 120
-var _y = y + 60
+var _y = y + 40
 draw_text_color(_x, _y, _plant_name, c_white, c_black, c_black, c_black, 1)
 draw_text_color(_x, _y + 20, _water_consumption_message, c_black, c_black, c_black, c_black, 1) 
 draw_text_color(_x, _y + 40, _harvest_type_message, c_black, c_black, c_black, c_black, 1)
