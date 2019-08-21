@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00917320-d83b-4bf5-b3fc-f26d1e20382a",
+            "Value": {
+                "id": "257b29b4-ba0f-49f6-8a0a-570dfdab4be4",
+                "resourcePath": "objects\\o_selected_plant_info\\o_selected_plant_info.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "00996fb9-128a-44b2-819d-5bdb76f9e742",
             "Value": {
                 "id": "67e4b151-b2a0-4f77-8e96-deb27f338143",
@@ -127,6 +135,14 @@
             }
         },
         {
+            "Key": "16dd7368-e0c8-48fa-9b6c-f3fcd09f4320",
+            "Value": {
+                "id": "ef41513f-45b6-444c-b037-04a27aa5e3fa",
+                "resourcePath": "views\\16dd7368-e0c8-48fa-9b6c-f3fcd09f4320.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "17104471-cd95-4c13-bc55-c77ba6cc4638",
             "Value": {
                 "id": "6e5e1c7d-6c65-4ee7-96cd-aa924aa8236c",
@@ -140,6 +156,14 @@
                 "id": "11ca150e-0bce-4d0b-9c35-b4b80733f53b",
                 "resourcePath": "objects\\o_border\\o_border.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "17bd4df1-e7ab-4e65-a801-7e404e4eb9a2",
+            "Value": {
+                "id": "1f6c199e-499a-4e46-a8fe-ef00ae28cdc4",
+                "resourcePath": "views\\17bd4df1-e7ab-4e65-a801-7e404e4eb9a2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -255,6 +279,14 @@
             }
         },
         {
+            "Key": "3852d5d0-0a95-4ca6-9be6-d4c5c898c70f",
+            "Value": {
+                "id": "be18523d-8ded-4146-8b9a-cd0171ac5279",
+                "resourcePath": "views\\3852d5d0-0a95-4ca6-9be6-d4c5c898c70f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "39896672-e3d4-4273-ae3c-5e7a012c7250",
             "Value": {
                 "id": "208be95b-bc0b-4e33-ae4a-e4488d18750f",
@@ -300,6 +332,22 @@
                 "id": "39ec9883-d4fb-4063-bb2a-717d514b8818",
                 "resourcePath": "sprites\\s_building_outline_positive\\s_building_outline_positive.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "43e435d3-61e2-47f3-b405-2d549453c0ac",
+            "Value": {
+                "id": "579f5848-af65-4dea-ab58-f6e17e13b1e1",
+                "resourcePath": "views\\43e435d3-61e2-47f3-b405-2d549453c0ac.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4f1d1ced-d595-473d-8354-cd29b1c66d82",
+            "Value": {
+                "id": "8d4376d4-56cf-41a6-a171-f0fa86f401e5",
+                "resourcePath": "views\\4f1d1ced-d595-473d-8354-cd29b1c66d82.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -452,6 +500,14 @@
                 "id": "fd266852-d3c4-4d37-bc59-f1767f6e055f",
                 "resourcePath": "scripts\\post_combat_processes\\post_combat_processes.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7c4cfa34-9eba-44f8-b24a-6e688521b14c",
+            "Value": {
+                "id": "f5e23988-7ba6-4839-93e4-3de03edbd78f",
+                "resourcePath": "sprites\\s_plant_display_border\\s_plant_display_border.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -783,6 +839,14 @@
             }
         },
         {
+            "Key": "ce44e5dd-f839-4bab-929d-95dacd93b88a",
+            "Value": {
+                "id": "d0a9b1b4-20f6-456b-a705-59e1ba21c98f",
+                "resourcePath": "objects\\o_selected_plant\\o_selected_plant.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d2a1baef-d12a-4340-b157-eb70e17e5e88",
             "Value": {
                 "id": "03485223-6f0c-4927-8139-c7f686f98b94",
@@ -804,6 +868,14 @@
                 "id": "6d5d92b1-ad01-4389-94aa-8f458f7f9d3f",
                 "resourcePath": "views\\dc23e0eb-ff8a-485d-9d5d-8f9bf5d5f8bd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dea89df9-c927-4b74-8078-f989e2acb623",
+            "Value": {
+                "id": "d16ad185-a2dc-42ac-b69c-427cc638162a",
+                "resourcePath": "rooms\\r_genetic_engineering_lab\\r_genetic_engineering_lab.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -863,6 +935,14 @@
             }
         },
         {
+            "Key": "e988526a-4d57-44c2-92e4-622f7076412d",
+            "Value": {
+                "id": "1c4c9f2d-0654-4c38-b79f-1f2a1e1d0f01",
+                "resourcePath": "views\\e988526a-4d57-44c2-92e4-622f7076412d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "eb8ca487-43ed-4cab-9cec-f7690868b6a3",
             "Value": {
                 "id": "7f920156-9faf-405a-b753-1c1b8b9b4fa6",
@@ -911,6 +991,14 @@
             }
         },
         {
+            "Key": "f0627143-fec3-4cfd-b221-591bd126e30b",
+            "Value": {
+                "id": "91e4e152-5938-4e68-a8f7-3b41eaff8ba0",
+                "resourcePath": "views\\f0627143-fec3-4cfd-b221-591bd126e30b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f1cdfa7c-d55f-4525-b09b-68faf920c87a",
             "Value": {
                 "id": "8fb360e0-f071-4de7-904e-47a5eb3ee8d3",
@@ -932,6 +1020,14 @@
                 "id": "5a7ffa24-d3e6-4bc4-9db2-217b3c992a7d",
                 "resourcePath": "scripts\\get_spawnable_object\\get_spawnable_object.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f571b2c9-a0a5-4d70-9d9e-c6819598cb6d",
+            "Value": {
+                "id": "773eefc8-e473-411e-8b3e-a550817b63ee",
+                "resourcePath": "sprites\\s_selected_plant_info_background\\s_selected_plant_info_background.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

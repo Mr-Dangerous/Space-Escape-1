@@ -65,6 +65,20 @@
             "value": "0",
             "varName": "_date",
             "varType": 1
+        },
+        {
+            "id": "0578e676-389a-4715-b831-71678adbaf00",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"bluecot\"",
+            "varName": "_currently_selected_plant",
+            "varType": 2
         }
     ],
     "solid": false,
