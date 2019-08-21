@@ -14,7 +14,14 @@ switch(_current_room){
 	
 	#region Gentic Engineering Lab
 	case (r_genetic_engineering_lab):
-	
+	switch(_currently_selected_plant){
+		
+	case "bluecot":
+		//bluecot has 5 nodes
+		
+		instance_create_depth(63, 128, -1, o_circle_red_node)
+	break;
+	}
 	
 	
 	
