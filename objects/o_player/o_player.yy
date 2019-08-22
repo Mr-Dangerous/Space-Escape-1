@@ -23,26 +23,6 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "01c64d94-cd03-4bdc-92fe-aa81775799d3"
-        },
-        {
-            "id": "06ca5e45-35e5-4922-93c4-e11ef52d1fb0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "01c64d94-cd03-4bdc-92fe-aa81775799d3"
-        },
-        {
-            "id": "8a4d8c03-4de5-4cf2-9f4f-7d4a86a5d17b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 2,
-            "m_owner": "01c64d94-cd03-4bdc-92fe-aa81775799d3"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -74,34 +54,6 @@
             "resourceFilter": 1023,
             "value": "1.5",
             "varName": "max_x_speed",
-            "varType": 0
-        },
-        {
-            "id": "f5dbe0ea-012d-44e2-91f7-10db143f5202",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "5",
-            "varName": "health",
-            "varType": 1
-        },
-        {
-            "id": "d309c19a-5c5d-4438-a477-e5c2c5b58067",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "-5",
-            "varName": "jump_height",
             "varType": 0
         },
         {
@@ -159,76 +111,6 @@
             "value": "1",
             "varName": "max_y_speed",
             "varType": 0
-        },
-        {
-            "id": "a6e6b143-8959-462f-a0c8-9247ba7fbe15",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "4",
-            "varName": "max_sprint_x_speed",
-            "varType": 0
-        },
-        {
-            "id": "9b03cd47-a6f2-4cc3-9d95-e4b419b30182",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "2",
-            "varName": "max_sprint_y_speed",
-            "varType": 0
-        },
-        {
-            "id": "03936af0-5655-430d-9364-7ac8126278d0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "6",
-            "varName": "attack_duration",
-            "varType": 1
-        },
-        {
-            "id": "c59550c3-1ba1-46ac-a020-ca426f868f27",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "attack_count",
-            "varType": 1
-        },
-        {
-            "id": "6e3ce29f-51ca-4014-a0e2-9845f313fd59",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "charge",
-            "varType": 1
         }
     ],
     "solid": false,

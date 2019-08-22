@@ -2,6 +2,7 @@
 _map_object = instance_find(o_map, 0);
 _map = _map_object._map;
 #endregion
+
 #region Rendering
 depth = -y
 if (place_meeting(x, y, o_transparent)){
@@ -36,11 +37,6 @@ dpad_up = gamepad_button_check_pressed(0, gp_padu)
 dpad_down = gamepad_button_check_pressed(0, gp_padd)
 dpad_right = gamepad_button_check_pressed(0, gp_padr)
 dpad_left = gamepad_button_check_pressed(0, gp_padl)
-
-
-
-
-
 #endregion
 
 #region State Machine
@@ -80,129 +76,34 @@ switch (state){
 	if (abs(xspeed) > max_x_speed){
 		xspeed = sign (xspeed) * max_x_speed;
 	}
+	/*
 	if (square){
 		state = player.start_melee_attack
 		sprite_index = s_player_attack
 		var _melee_weapon = instance_create_depth((x + (15*image_xscale)), y - 1, depth - 10, o_omni_blade)
+		_melee_weapon.visible = true
 		_melee_weapon.image_xscale = image_xscale
+		image_speed = 0
 	}
-	//turn blocking items transparent
-	//Interacting
-	if (cross){
-		
-		if (place_meeting(x + (16 * image_xscale), y, o_interactable)){
-			state = player.interacting;
-		}
-	//check to see if it can be tilled
-		var i = floor((x + (20 * image_xscale)) / 16);
-		var j = floor((y + 16)/ 16);
-		var _tile = ds_grid_get(_map, i, j)
-		var tile_farmable = false
-		
-		if (_tile = "grass" or
-			_tile = "flower" or
-			_tile = "tilled"){
-			tile_farmable = true
-			}
-			
-		if (tile_farmable){	
-			switch (_tile){
-				case "tilled":
-				ds_grid_set(_map, i, j, "grass");
-				break;
-	
-				case "grass":
-				ds_grid_set(_map, i, j, "tilled");
-				break;
-				
-				case "flower":
-				ds_grid_set(_map, i, j, "tilled");
-				break;
-			}
-		}
-	}
+	*/
 	break;
-	
-#region clear terrain - warning!  deprecated!
-	//clear terrain, later cycle through buildings to place
+#endregion
+
+
+
+
+
+
+
+
+
+
+#region Attacking - warning!  borked!
 /*
-	if (build){
-		for (var i = 0; i < 3; i++){
-			for (var j = -1; j<2; j++){
-				var k = floor((x + (20 * image_xscale) + (16* i * image_xscale)) / 16);
-				var l= floor(((y + 16) + (j * 16))  / 16);
-				var _tile = ds_grid_get(_map, k, l)
-				var tile_farmable = false
-				if (_tile = "grass" or
-					_tile = "flower" or
-					_tile = "tilled"){
-					tile_farmable = true
-					}
-				var _terrain_removable = false
-				if (_terrain_tile != 0){
-					_terrain_removable = true
-				}
-				if (tile_farmable){	
-					switch (_tile){
-						case "tilled":
-						ds_grid_set(_map, k, l, "grass");
-						break;
-	
-						case "grass":
-						ds_grid_set(_map, k, l, "tilled");
-						break;
-				
-						case "flower":
-						ds_grid_set(_map, k, l, "tilled");
-						break;
-						}
-				if (_terrain_removable){
-					switch (_terrain_tile){
-						
-						case "broadleaf tree":
-						ds_grid_set(_map, k, l, "tilled");
-						ds_grid_set(_terrain_map, k, l, "none");
-						var _instance = instance_place(k+i*16, l+j*16, o_border)
-						var _instance_two = instance_nearest((k+i)*16, (l+j)*16, o_transparent)
-						instance_destroy(_instance)
-						instance_destroy(_instance_two)
-						break;
-						
-						case "brambles":
-						ds_grid_set(_map, k, l, "tilled");
-						ds_grid_set(_terrain_map, k, l, "none");
-						var _instance = instance_place(k+i*16, l+j*16, o_difficult_terrain)
-						instance_destroy(_instance)
-						break;
-						
-						case "brambles with dead tree":
-						ds_grid_set(_map, k, l, "tilled");
-						ds_grid_set(_terrain_map, k, l, "none");
-						var _instance = instance_place((k+i)*16, (l+j)*16, o_difficult_terrain)
-						instance_destroy(_instance)
-						}
-					}
-				}
-			}
-		
-		}
-	}
-	
-	break;
-*/
-#endregion
-#endregion
-#region Start Melee Attack
-//will eventually slow down to match weapon attack speed
-if (!alarm_get(1)){
-	alarm_set(1, 10)
-}
-#endregion
-#region Attacking - warning!  deprecated!
 	case player.attacking:
 	xspeed = 0;
 	yspeed = 0;
-	image_index = 1
+	image_index = image_index + 1
 	//needs to become an equipped variable instead of o_omniblade
 	var _melee_weapon = instance_nearest(x, y, o_omni_blade)
 	_melee_weapon.x = x + (13 * image_xscale)
@@ -214,39 +115,8 @@ if (!alarm_get(1)){
 	if (!alarm_get(0)){
 		alarm_set(0, 10)
 	}
-	
-	/*
-	deprecated for now
-	if (right or left){
-		image_xscale = right - left
-	}
-	if (attack) {
-		charge += 1
-		if (charge > 10){
-			charge = 10
-		}
-		if (charge > 1){
-			repeat (charge){
-				draw_charge(_player.x, _player.y);
-			}
-		}
-		
-	}
-		
-	if (attack_release){
-		image_index = 1
-		attack_count += 1
-	}
-	if (attack_count !=0){
-		attack_count += 1
-	}
-	if (attack_count >= attack_duration){
-		state = player.moving;
-		attack_count = 0
-		charge = 0
-	}
-	*/
 	break;	
+	*/
 #endregion Interacting
 //just for now
 	case player.interacting:
@@ -258,8 +128,7 @@ if (!alarm_get(1)){
 		}
 	break;
 		
-#region 
-#endregion
+
 }
 
 #endregion
