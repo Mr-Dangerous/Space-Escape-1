@@ -81,8 +81,10 @@ switch (state){
 		xspeed = sign (xspeed) * max_x_speed;
 	}
 	if (square){
-		state = player.attacking
+		state = player.start_melee_attack
 		sprite_index = s_player_attack
+		var _melee_weapon = instance_create_depth((x + (15*image_xscale)), y - 1, depth - 10, o_omni_blade)
+		_melee_weapon.image_xscale = image_xscale
 	}
 	//turn blocking items transparent
 	//Interacting
@@ -189,16 +191,30 @@ switch (state){
 	break;
 */
 #endregion
-
+#endregion
+#region Start Melee Attack
+//will eventually slow down to match weapon attack speed
+if (!alarm_get(1)){
+	alarm_set(1, 10)
+}
 #endregion
 #region Attacking - warning!  deprecated!
 	case player.attacking:
 	xspeed = 0;
 	yspeed = 0;
+	image_index = 1
+	//needs to become an equipped variable instead of o_omniblade
+	var _melee_weapon = instance_nearest(x, y, o_omni_blade)
+	_melee_weapon.x = x + (13 * image_xscale)
+	_melee_weapon.y = y - 5
+	image_angle = 270
 	
-	if (image_index = image_number - 1){
-		state = player.moving
+	image_speed = 0
+	//freezes animation, then sets the state to player moving
+	if (!alarm_get(0)){
+		alarm_set(0, 10)
 	}
+	
 	/*
 	deprecated for now
 	if (right or left){

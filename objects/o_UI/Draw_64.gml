@@ -24,10 +24,15 @@ switch (_current_room){
 			draw_sprite(s_supply_shed, 0, _tool_x, _tool_y + 32)
 			break;
 	}
-	//display secondary action
+	//display secondary action.
+	/*future functionality
+	later one, when it comes time to have an enter combat and leave combat
+	button, these should swap.
+	*/
 	var _secondary_action_x = 32
 	var _secondary_action_y = _gui_height - 200 
 	draw_sprite_stretched(s_tool_selector_background, 0, _secondary_action_x, _secondary_action_y, 64, 64)
+	draw_sprite_stretched(s_sword_icon, 0, _secondary_action_x + 16, _secondary_action_y + 16, 32,32)
 
 	break;
 	#endregion

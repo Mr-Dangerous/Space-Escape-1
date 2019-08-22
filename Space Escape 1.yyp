@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0747f26e-f6dd-4157-a5dc-38646a5e4722",
+            "Value": {
+                "id": "4f6e5e22-b1c9-4b4f-91e5-703c7b35f63a",
+                "resourcePath": "objects\\o_omni_blade\\o_omni_blade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0a5dfa86-421f-4a08-a87d-91ba69870186",
             "Value": {
                 "id": "dd563242-f692-4c90-9b0d-acc0b00da5d7",
@@ -359,6 +367,14 @@
             }
         },
         {
+            "Key": "4a607282-02aa-49f3-8e88-30807e54a415",
+            "Value": {
+                "id": "d869273a-5f30-4b1c-9eb2-370fc5fe55ad",
+                "resourcePath": "objects\\o_melee_weapon\\o_melee_weapon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4da6acc7-0d12-4f5c-beef-a02a72c48550",
             "Value": {
                 "id": "678c7f8e-4000-47d0-9f09-6ceb6f94b75c",
@@ -559,14 +575,6 @@
             }
         },
         {
-            "Key": "7ea23e42-c2ee-4cd7-8301-6246c27cacdb",
-            "Value": {
-                "id": "4a503f8d-238a-4430-8868-da818eb570c5",
-                "resourcePath": "sprites\\s_sword_icon\\s_sword_icon.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7f959bb1-b3c5-427f-8ba0-7c65441cdbbf",
             "Value": {
                 "id": "b2d72686-6642-48dd-b11b-39dcb08c1aab",
@@ -743,6 +751,14 @@
             }
         },
         {
+            "Key": "9ef40176-9bdc-4d28-ad46-d045055fa237",
+            "Value": {
+                "id": "8c9edeac-0665-4d21-9cc6-695887edd372",
+                "resourcePath": "sprites\\s_omni_blade\\s_omni_blade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9f8b75a0-5ec4-4c1c-9e5a-eb897f70407e",
             "Value": {
                 "id": "9c22e238-b8d2-481d-a147-7fd99b03958a",
@@ -866,7 +882,7 @@
             "Key": "ba02b549-9a91-4ef1-ac6e-c9b010b9a80e",
             "Value": {
                 "id": "0e048a90-d5ba-446d-8133-9f6de33bcb69",
-                "resourcePath": "sprites\\sprite46\\sprite46.yy",
+                "resourcePath": "sprites\\s_sword_icon\\s_sword_icon.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -8,7 +8,7 @@
     "VTile": false,
     "bbox_bottom": 31,
     "bbox_left": 0,
-    "bbox_right": 31,
+    "bbox_right": 21,
     "bbox_top": 1,
     "bboxmode": 0,
     "colkind": 1,
@@ -87,7 +87,7 @@
             "isLocked": false,
             "name": "weapon",
             "opacity": 60,
-            "visible": true
+            "visible": false
         },
         {
             "id": "22f42870-675e-49bf-bbe3-b5b4c8b5c6fb",
@@ -103,7 +103,7 @@
     ],
     "origin": 9,
     "originLocked": false,
-    "playbackSpeed": 7,
+    "playbackSpeed": 2,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,
