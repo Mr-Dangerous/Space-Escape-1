@@ -13,15 +13,32 @@ if (place_meeting(xprevious, yprevious, o_transparent) and !place_meeting(x, y, 
 #endregion
 
 #region Set up Controls
-up = keyboard_check(ord("W"));
-right = keyboard_check(ord("D"));
-down = keyboard_check(ord("S"));
-left = keyboard_check(ord("A"));
-space = keyboard_check(vk_space);
-attack = keyboard_check_pressed(ord("E"));
-attack_release = keyboard_check_released(ord("E"));
-interact = keyboard_check_pressed(ord("Q"));
-plant = keyboard_check_pressed(ord("T"));
+up = keyboard_check(ord("W")) || gamepad_axis_value(0, gp_axislv) > 0;
+right = keyboard_check(ord("D"))|| gamepad_axis_value(0, gp_axislh) > 0;
+down = keyboard_check(ord("S"))  || gamepad_axis_value(0, gp_axislv) < 0;
+left = keyboard_check(ord("A")) || gamepad_axis_value(0, gp_axislh) > 0;
+space = keyboard_check(vk_space)
+var square = (keyboard_check_pressed(ord("E")) or gamepad_button_check_pressed(0, gp_face3))
+//attack_release = keyboard_check_released(ord("E"));
+cross = keyboard_check_pressed(ord("Q")) or gamepad_button_check_pressed(0, gp_face1)
+//plant = keyboard_check_pressed(ord("T"));
+triangle = gamepad_button_check_pressed(0, gp_face4)
+circle = gamepad_button_check_pressed(0, gp_face2)
+shoulder_r = gamepad_button_check_pressed(0, gp_shoulderr)
+trigger_r =gamepad_button_check_pressed(0, gp_shoulderrb)
+hat_r = gamepad_button_check_pressed(0, gp_stickr)
+shoulder_l = gamepad_button_check_pressed(0, gp_shoulderl)
+trigger_l = gamepad_button_check_pressed(0, gp_shoulderlb)
+hat_l = gamepad_button_check_pressed(0, gp_stickl)
+start = gamepad_button_check_pressed(0, gp_start)
+select = gamepad_button_check_pressed(0, gp_select)
+dpad_up = gamepad_button_check_pressed(0, gp_padu)
+dpad_down = gamepad_button_check_pressed(0, gp_padd)
+dpad_right = gamepad_button_check_pressed(0, gp_padr)
+dpad_left = gamepad_button_check_pressed(0, gp_padl)
+
+
+
 
 
 #endregion
@@ -63,12 +80,13 @@ switch (state){
 	if (abs(xspeed) > max_x_speed){
 		xspeed = sign (xspeed) * max_x_speed;
 	}
-	if (attack){
+	if (square){
 		state = player.attacking
+		sprite_index = s_player_attack
 	}
 	//turn blocking items transparent
 	//Interacting
-	if (interact){
+	if (cross){
 		
 		if (place_meeting(x + (16 * image_xscale), y, o_interactable)){
 			state = player.interacting;
@@ -173,11 +191,16 @@ switch (state){
 #endregion
 
 #endregion
-#region Attacking
+#region Attacking - warning!  deprecated!
 	case player.attacking:
 	xspeed = 0;
 	yspeed = 0;
-	sprite_index = s_player_attack
+	
+	if (image_index = image_number - 1){
+		state = player.moving
+	}
+	/*
+	deprecated for now
 	if (right or left){
 		image_xscale = right - left
 	}
@@ -206,6 +229,7 @@ switch (state){
 		attack_count = 0
 		charge = 0
 	}
+	*/
 	break;	
 #endregion Interacting
 //just for now
