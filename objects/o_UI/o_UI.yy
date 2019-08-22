@@ -163,6 +163,20 @@
             "value": "instance_create_depth(20, 40, -100, o_cursor)",
             "varName": "_cursor",
             "varType": 4
+        },
+        {
+            "id": "e310ea6e-ec08-46c1-b9e3-43205dd2e9ff",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_menu_movement_freeze",
+            "varType": 3
         }
     ],
     "solid": false,

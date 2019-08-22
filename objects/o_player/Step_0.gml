@@ -13,10 +13,10 @@ if (place_meeting(xprevious, yprevious, o_transparent) and !place_meeting(x, y, 
 #endregion
 
 #region Set up Controls
-up = keyboard_check(ord("W")) || gamepad_axis_value(0, gp_axislv) > 0;
-right = keyboard_check(ord("D"))|| gamepad_axis_value(0, gp_axislh) > 0;
-down = keyboard_check(ord("S"))  || gamepad_axis_value(0, gp_axislv) < 0;
-left = keyboard_check(ord("A")) || gamepad_axis_value(0, gp_axislh) > 0;
+up = (keyboard_check(ord("W")) || (gamepad_axis_value(0, gp_axislv) < 0));
+down = (keyboard_check(ord("S"))  || (gamepad_axis_value(0, gp_axislv) > 0));
+right = (keyboard_check(ord("D"))|| (gamepad_axis_value(0, gp_axislh) > 0));
+left = (keyboard_check(ord("A")) || (gamepad_axis_value(0, gp_axislh) < 0));
 space = keyboard_check(vk_space)
 var square = (keyboard_check_pressed(ord("E")) or gamepad_button_check_pressed(0, gp_face3))
 //attack_release = keyboard_check_released(ord("E"));
