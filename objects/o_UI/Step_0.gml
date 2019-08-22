@@ -31,6 +31,17 @@ switch(_current_room){
 			event_user(0)
 		}
 	}
+	if (shoulder_r){
+		var _action_list_size = ds_list_size(_action_list)
+		if (_action_list_position >= _action_list_size - 1){
+			_action_list_position = 0 
+		} else {
+			_action_list_position += 1
+		}		
+		var _action = ds_list_find_value(_action_list, _action_list_position)
+		currently_selected_tool = _action
+	}
+	
 	break;
 	#endregion
 	
@@ -150,7 +161,7 @@ switch(_current_room){
 		}
 		//open the genetic tile selector
 		if (cross){
-			
+		}
 
 		#endregion	
 		break;

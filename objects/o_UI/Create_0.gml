@@ -1,6 +1,12 @@
 //this will be put into the event that switches 
 //into the genetic engineering lab later.
+
 gamepad_set_axis_deadzone(0, 0.3);
+
+ds_list_add(_action_list, "shovel")
+ds_list_add(_action_list, "supply shed")
+
+
 ds_grid_resize(_lab_map, 5, 3)
 ds_grid_set(_lab_map, 0, 0, "plant select")
 ds_grid_set(_lab_map, 1, 0, "plant info")

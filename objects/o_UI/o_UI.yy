@@ -177,6 +177,48 @@
             "value": "0",
             "varName": "_menu_movement_freeze",
             "varType": 3
+        },
+        {
+            "id": "39796a85-ec7e-433b-9afb-8b660b052200",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"shovel\"",
+            "varName": "currently_selected_tool",
+            "varType": 2
+        },
+        {
+            "id": "4a60681a-7bbe-4b00-9ef3-a31f5f8a9ca7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_action_list_position",
+            "varType": 1
+        },
+        {
+            "id": "ffae1579-ffe8-4834-8bba-54aa4233f6b7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "ds_list_create()",
+            "varName": "_action_list",
+            "varType": 4
         }
     ],
     "solid": false,
