@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "7ea23e42-c2ee-4cd7-8301-6246c27cacdb",
+            "Value": {
+                "id": "4a503f8d-238a-4430-8868-da818eb570c5",
+                "resourcePath": "sprites\\s_sword_icon\\s_sword_icon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7f959bb1-b3c5-427f-8ba0-7c65441cdbbf",
             "Value": {
                 "id": "b2d72686-6642-48dd-b11b-39dcb08c1aab",
@@ -852,6 +860,14 @@
                 "id": "e1871985-a26b-49ea-8b45-67a83d710581",
                 "resourcePath": "scripts\\apply_friction\\apply_friction.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ba02b549-9a91-4ef1-ac6e-c9b010b9a80e",
+            "Value": {
+                "id": "0e048a90-d5ba-446d-8133-9f6de33bcb69",
+                "resourcePath": "sprites\\sprite46\\sprite46.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -24,6 +24,10 @@ switch (_current_room){
 			draw_sprite(s_supply_shed, 0, _tool_x, _tool_y + 32)
 			break;
 	}
+	//display secondary action
+	var _secondary_action_x = 32
+	var _secondary_action_y = _gui_height - 200 
+	draw_sprite_stretched(s_tool_selector_background, 0, _secondary_action_x, _secondary_action_y, 64, 64)
 
 	break;
 	#endregion
